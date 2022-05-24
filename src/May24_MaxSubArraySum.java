@@ -1,4 +1,4 @@
-public class May21_ValidParentheses{
+public class May24_MaxSubArraySum {
     private char arr[];
     private int top;
     private int capacity;
@@ -43,22 +43,13 @@ public class May21_ValidParentheses{
     public boolean isValid(String s){
         this.create(s.length());
         for(int i=0;i<s.length();i++){
-            if(s.charAt(i)=='(' || s.charAt(i)=='[' || s.charAt(i)=='{'){
-                this.push(s.charAt(i));
-            }else if(s.charAt(i)==')' || s.charAt(i)==']' || s.charAt(i)=='}'){
-                if(!this.isEmpty() && ((s.charAt(i)==')' && this.arr[top]=='(') || (s.charAt(i)==']' && this.arr[top]=='[') || (s.charAt(i)=='}' && this.arr[top]=='{'))){
-                    this.pop();
-                }else{
-                    return false;
-                }
-            }
+            
         }
 
         return isEmpty();
     }
+
     public static void main(String[] args) {
-        String s="]";
-        May21_ValidParentheses t=new May21_ValidParentheses();
-        System.out.println(t.isValid(s));
+        
     }
 }
