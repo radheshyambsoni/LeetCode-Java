@@ -1,5 +1,10 @@
+package ConditionalsNLoops;
 import java.util.Scanner;
-public class May18_9PalindromicNum {
+
+// https://leetcode.com/problems/palindrome-number/
+// 9. Palindrome Number
+
+public class PalindromeNum {
     // Given an integer x, return true if x is palindrome integer.
     // An integer is a palindrome when it reads the same backward as forward.
     // For example, 121 is a palindrome while 123 is not.

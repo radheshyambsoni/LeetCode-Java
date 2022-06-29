@@ -1,6 +1,7 @@
+package Strings;
 import java.util.Arrays;
 
-public class May19_3LongestSubstring {
+public class LongestSubstring {
     public static int lengthOfLongestSubstring(String s) {
         int maxLength=0;
         int arr[]=new int[255];

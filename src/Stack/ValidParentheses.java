@@ -1,4 +1,7 @@
-public class May21_ValidParentheses{
+package Stack;
+// https://leetcode.com/problems/valid-parentheses
+// 20. Valid Parentheses
+public class ValidParentheses{
     private char arr[];
     private int top;
     private int capacity;
@@ -58,7 +61,7 @@ public class May21_ValidParentheses{
     }
     public static void main(String[] args) {
         String s="]";
-        May21_ValidParentheses t=new May21_ValidParentheses();
+        ValidParentheses t=new ValidParentheses();
         System.out.println(t.isValid(s));
     }
 }

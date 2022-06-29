@@ -1,4 +1,7 @@
-public class May25_strStr {
+package Strings;
+// https://leetcode.com/problems/implement-strstr
+// 28. Implement strStr()
+public class StrStr {
     public static int strStr(String haystack, String needle) {
         if(needle.length()==0){return 0;}
         return haystack.indexOf(needle);

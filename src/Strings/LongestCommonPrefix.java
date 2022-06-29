@@ -1,4 +1,5 @@
-public class May22_LongestCommPref {
+package Strings;
+public class LongestCommonPrefix {
     public static String longestCommonPrefix(String[] strs) {
         int minLength=Integer.MAX_VALUE;
         for(int i=0;i<strs.length;i++){

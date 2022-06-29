@@ -1,6 +1,10 @@
+package Arrays;
 import java.util.Arrays;
 
-public class May18_1TwoSum {
+// https://leetcode.com/problems/two-sum/
+// 1. Two Sum
+
+public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
         int i=0,j=1;
         int idx[]={-1,-1};

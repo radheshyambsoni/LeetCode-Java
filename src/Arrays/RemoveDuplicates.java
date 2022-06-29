@@ -1,5 +1,7 @@
-// Remove Duplicates from Sorted Array
-public class May23_RemoveDupli {
+package Arrays;
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array
+// 26. Remove Duplicates from Sorted Array
+public class RemoveDuplicates {
     public static int removeDuplicates(int[] nums) {
         int idx=0;
         int temp=-101;

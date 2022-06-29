@@ -1,4 +1,5 @@
-public class May24_MaxSubArraySum {
+package Arrays;
+public class MaxSubArraySum {
     public static int maxSubArray(int[] nums) {
         int maxSum=Integer.MIN_VALUE,maxEndingHere=0;
         for(int i=0;i<nums.length;i++){

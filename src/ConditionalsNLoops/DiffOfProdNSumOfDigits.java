@@ -1,4 +1,7 @@
-public class Jun18_diffOfProdNSumOfDigits {
+package ConditionalsNLoops;
+// https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
+// 1281. Subtract the Product and Sum of Digits of an Integer
+public class DiffOfProdNSumOfDigits {
     static int subtractProductAndSum(int n) {
         int product=1;
         int sum=0;
