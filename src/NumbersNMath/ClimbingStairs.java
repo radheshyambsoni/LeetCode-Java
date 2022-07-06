@@ -1,3 +1,5 @@
+package NumbersNMath;
+
 // 70. Climbing Stairs
 // https://leetcode.com/problems/climbing-stairs/
 // Related Topics - Math, DP, Memorization
