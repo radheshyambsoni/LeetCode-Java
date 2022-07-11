@@ -9,15 +9,12 @@ import java.util.Arrays;
 public class IsPangram {
     public boolean checkIfPangram(String sentence) {
         boolean check[]=new boolean[26];
-        Arrays.fill(check, false);
-        for(int i=0;i<sentence.length();i++){
-            check[sentence.charAt(i)-97]=true;
+        for(Character c:sentence.toCharArray()){
+            check[c-97]=true;
         }
         
-        for(int i=0,j=13;i<13;i++){
-            if(!(check[i] && check[j++])){
-                return false;
-            }
+        for(boolean b:check){
+            if(!b){return false;}
         }
         
         return true;
