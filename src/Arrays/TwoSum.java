@@ -5,27 +5,15 @@ import java.util.Arrays;
 // 1. Two Sum
 
 public class TwoSum {
-    public static int[] twoSum(int[] nums, int target) {
-        int i=0,j=1;
-        int idx[]={-1,-1};
-        while(i<(nums.length-1) && j<nums.length){
-            if(j==nums.length-1){
-                if(nums[i]+nums[j]!=target){
-                    j=++i+1;continue;
-                }else{
-                    idx[0]=i;
-                    idx[1]=j;
-                    break;
+    public static int[] twoSum(int[] nums, int target) {        
+        for(int i=0;i<nums.length-1;i++){
+            for(int j=i+1;j<nums.length;j++){
+                if(nums[i]+nums[j]==target){
+                    return new int[]{i,j};
                 }
             }
-            if(nums[i]+nums[j]==target){
-                idx[0]=i;
-                idx[1]=j;
-                break;
-            }
-            j++;
         }
-        return idx;
+        return null;
     }
     public static void main(String[] args) {
         int arr[]={1,2,3,4,5};
