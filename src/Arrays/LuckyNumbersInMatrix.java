@@ -7,36 +7,33 @@ import java.util.List;
 // Related Topics - Array, Matrix
 
 public class LuckyNumbersInMatrix {
-    public static List<Integer> luckyNumbers (int[][] matrix) {
-        List<Integer> lucky=new ArrayList<>();
-        List<Integer> rowMin=new ArrayList<>();
-        List<Integer> colMax=new ArrayList<>();
-        for(int i=0;i<matrix.length;i++){
-            int min=100001;
-            for(int j=0;j<matrix[0].length;j++){
-                if(min>matrix[i][j]){min=matrix[i][j];}
-            }
-            rowMin.add(min);
-        }
-        for(int i=0;i<matrix[0].length;i++){
-            int max=0;
-            for(int j=0;j<matrix.length;j++){
-                if(max<matrix[j][i]){max=matrix[j][i];}
-            }
-            colMax.add(max);
-        }
-        System.out.println(rowMin);
-        System.out.println(colMax);
-        for(int i=0;i<matrix.length;i++){
-            for(int j=0;j<matrix[0].length;j++){
-                if(matrix[i][j]==rowMin.get(i) && matrix[i][j]==colMax.get(j)){
-                    lucky.add(matrix[i][j]);
-                }
+    private static int minColInRow(int[][] matrix,int row){
+        int min=matrix[row][0],minIdx=0;
+        for(int col=1;col<matrix[0].length;col++){
+            if(matrix[row][col]<min){
+                min=matrix[row][col];
+                minIdx=col;
             }
         }
-        
-        return lucky;
+        return minIdx;
     }
+    private static boolean isMaxInCol(int[][] matrix, int minCol, int val) {
+        for(int row=0;row<matrix.length;row++){
+            if(matrix[row][minCol]>val){return false;}
+        }
+        return true;
+    }
+    public static List<Integer> luckyNumbers (int[][] matrix) {
+        List<Integer> lucky=new ArrayList<>();        
+        for(int row=0;row<matrix.length;row++){
+            int minCol=minColInRow(matrix, row);
+            int val=matrix[row][minCol];
+            if(isMaxInCol(matrix,minCol,val)){
+                lucky.add(val);
+            }
+        }
+        return lucky;
+    }    
     public static void main(String[] args) {
         System.out.println(luckyNumbers(new int[][]{{3,7,8},{9,11,13},{15,16,17}}));
     }
