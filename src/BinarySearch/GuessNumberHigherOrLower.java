@@ -8,7 +8,7 @@ public class GuessNumberHigherOrLower {
     public int guessNumber(int n) {        
         int start=1,end=n;
         int mid=start+(end-start)/2;
-        // following lines are commented as the guess function(API) is note available here and is there on leetcode only
+        // following lines are commented as the guess function/API is note available here and is there on leetcode only
         // while(true){
         //     if(guess(mid)==0){
         //         break;
