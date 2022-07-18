@@ -1,3 +1,5 @@
+// This question is running just as fine but due to some unknown reason the solution is not getting while submission
+// 
 public class JumpGame{
     static boolean flag=false;
     private static void check(int[] nums,int idx){
