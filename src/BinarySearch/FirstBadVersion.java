@@ -5,10 +5,10 @@ package BinarySearch;
 // Related Topics - Binary Search, Interactive
 
 public class FirstBadVersion {
-    public int firstBadVersion(int n) {
-        int start=1,end=n;
-        int mid=start+(end-start)/2;
-        // following lines are commented as the isBadVersion function/API is note available here and is there on leetcode only
+    // following lines are commented as the isBadVersion function/API is note available here and is there on leetcode only
+    // public int firstBadVersion(int n) {
+    //     int start=1,end=n;
+    //     int mid=start+(end-start)/2;
         // while(start<end){
         //     if(isBadVersion(mid)){
         //         end=mid;
@@ -19,6 +19,6 @@ public class FirstBadVersion {
         //     }
         // }
         
-        return end;
-    }
+    //     return end;
+    // }
 }
