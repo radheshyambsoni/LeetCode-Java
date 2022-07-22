@@ -1,11 +1,9 @@
-package Arrays;
+package BinarySearch;
 
 // Topic - Arrays, Binary Search
 // 35. Search Insert Position
 // https://leetcode.com/problems/search-insert-position/
-// Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
-
-// You must write an algorithm with O(log n) runtime complexity
+// Related Topics - Array, Binary Search
 
 public class SearchInsertPosition{
     // Using binary search
