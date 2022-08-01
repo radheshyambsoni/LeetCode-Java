@@ -1,3 +1,5 @@
+package BinarySearch;
+
 // 704. Binary Search - Easy
 // https://leetcode.com/problems/binary-search/
 // Related Topics - Array, Binary Search
