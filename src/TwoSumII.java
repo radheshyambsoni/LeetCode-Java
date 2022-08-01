@@ -4,7 +4,7 @@ public class TwoSumII {
     public static int[] twoSum(int[] numbers, int target) {
         int start=0,end=numbers.length-1;
         int mid=start+(end-start)/2;
-        while(start<=end){
+        while(start<end){
             if(numbers[mid]>target){
                 end=mid-1;
                 mid=start+(end-start)/2;
