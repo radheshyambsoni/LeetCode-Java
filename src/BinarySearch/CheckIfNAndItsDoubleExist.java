@@ -1,3 +1,5 @@
+package BinarySearch;
+
 // 1346. Check If N and Its Double Exist - Easy
 // https://leetcode.com/problems/check-if-n-and-its-double-exist/
 // Related Topics - Array, Hash Table, Two Pointers, Binary Search, Sorting
