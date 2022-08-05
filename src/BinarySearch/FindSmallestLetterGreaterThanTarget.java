@@ -2,7 +2,7 @@ package BinarySearch;
 
 // 744. Find Smallest Letter Greater Than Target - Easy
 // https://leetcode.com/problems/find-smallest-letter-greater-than-target/
-// 
+// Related Topics - Arrays, Binary Search
 
 public class FindSmallestLetterGreaterThanTarget {
     public char nextGreatestLetter(char[] letters, char target) {
