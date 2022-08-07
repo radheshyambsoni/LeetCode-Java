@@ -1,3 +1,5 @@
+package BinarySearch;
+
 // 1095. Find in Mountain Array - Hard
 // https://leetcode.com/problems/find-in-mountain-array/
 // Related Topics - Array, Binary Search, Interactive

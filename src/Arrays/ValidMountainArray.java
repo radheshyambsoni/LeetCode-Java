@@ -1,3 +1,5 @@
+package Arrays;
+
 // 941. Valid Mountain Array - Easy
 // https://leetcode.com/problems/valid-mountain-array/
 // Related Topics - Arrays
