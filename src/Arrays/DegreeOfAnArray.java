@@ -1,62 +1,41 @@
 package Arrays;
 
-import java.util.HashMap;
-import java.util.ArrayList;
-
-// 697. Degree of an Array - Easy
+// 697. Degree of an Array-Easy
 // https://leetcode.com/problems/degree-of-an-array/
-// Related Topics - Array Hash Table
-// Runtime: 12 ms, faster than 97.19% of Java online submissions for Degree of an Array.
-// Memory Usage: 47.4 MB, less than 88.07% of Java online submissions for Degree of an Array.
+// Related Topics-Array Hash Table
+// Runtime: 2 ms, faster than 100.00% of Java online submissions for Degree of an Array.
+// Memory Usage: 47.1 MB, less than 89.11% of Java online submissions for Degree of an Array.
 
 public class DegreeOfAnArray{
-    public static int findShortestSubArray(int[] nums) {
-        if(nums.length==1){
-            return 1;
+    public static int findShortestSubArray(int[] nums){
+        int size=0;
+        for(int i:nums){
+            size=Math.max(size,i);
         }
-        HashMap<Integer,Integer> hm=new HashMap<>();
-        int i=0,j=nums.length-1;
-        while(i<j){
-            hm.put(nums[i],hm.getOrDefault(nums[i],0)+1);
-            i++;
-            hm.put(nums[j],hm.getOrDefault(nums[j],0)+1);
-            j--;
-        }if(nums.length%2!=0){
-            hm.put(nums[i],hm.getOrDefault(nums[i],0)+1);
-        }        
-        int maxFreq=-1;
-        for(int k:hm.keySet()){
-            if(hm.get(k)>maxFreq){                
-                maxFreq=hm.get(k);
+
+        int[] count=new int[size+1];
+        int[] startIdx=new int[size+1];
+        int[] lastIdx=new int[size+1];
+
+        int max=1;
+        for(int i=0;i<nums.length;i++){            
+            count[nums[i]]++;
+            max=Math.max(max,count[nums[i]]);
+            if(startIdx[nums[i]]==0){
+                startIdx[nums[i]]=i+1;
             }
+            lastIdx[nums[i]]=i+1;
         }
-        if(maxFreq==1){return 1;}
-        ArrayList<Integer> v=new ArrayList<>();
-        for(int k:hm.keySet()){
-            if(hm.get(k)==maxFreq){
-                v.add(k);
+
+        int minSize=Integer.MAX_VALUE;
+        for(int i=0;i<count.length;i++){
+            if(count[i]==max){
+                minSize=Math.min(minSize,lastIdx[i]-startIdx[i]+1);
             }
-        }
-        int minSize=nums.length+1;
-        for(int k:v){
-            i=0;
-            j=nums.length-1;
-            while(i<nums.length){
-                if(nums[i]==k){
-                    break;
-                }
-                i++;
-            }while(j>=0){
-                if(nums[j]==k){
-                    break;
-                }
-                j--;
-            }
-            minSize=Math.min(minSize,j-i+1);
         }
         return minSize;
     }
-    public static void main(String[] args) {
+    public static void main(String[] args){
         System.out.println(findShortestSubArray(new int[]{1,2,2,3,1}));
     }
 }
