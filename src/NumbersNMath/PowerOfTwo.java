@@ -6,7 +6,7 @@ package NumbersNMath;
 // Runtime: 1 ms, faster than 100.00% of Java online submissions for Power of Two.
 // Memory Usage: 39.8 MB, less than 87.28% of Java online submissions for Power of Two.
 
-public class PowrOfTwo{
+public class PowerOfTwo{
     public static boolean minimumTotal(int n) {
         if(n<=0){
             return false;
