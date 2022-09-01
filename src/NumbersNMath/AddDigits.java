@@ -1,4 +1,4 @@
-package NumbersNMath
+package NumbersNMath;
 
 // https://leetcode.com/problems/add-digits/submissions/
 // Runtime: 1 ms, faster than 100.00% of Java online submissions for Add Digits.
