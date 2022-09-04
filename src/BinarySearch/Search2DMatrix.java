@@ -1,6 +1,6 @@
 package BinarySearch;
 
-// https://leetcode.com/problems/search-a-2d-matrix/
+// https://leetcode.com/problems/search-a-2d-matrix/ - Medium
 // Runtime: 0 ms, faster than 100.00% of Java online submissions for Search a 2D Matrix.
 // Memory Usage: 42.2 MB, less than 81.00% of Java online submissions for Search a 2D Matrix.
 
