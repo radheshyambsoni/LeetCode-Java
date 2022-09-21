@@ -4,7 +4,7 @@ package Arrays;
 // Runtime: 3 ms, faster than 99.94% of Java online submissions for Convert 1D Array Into 2D Array.
 // Memory Usage: 52 MB, less than 91.66% of Java online submissions for Convert 1D Array Into 2D Array.
 
-pubilc class Conver1DArrInto2DArr {
+public class Convert1DArrInto2DArr {
     public int[][] construct2DArray(int[] original, int m, int n) {
         if(m*n!=original.length){return new int[0][];}
         int l=0;

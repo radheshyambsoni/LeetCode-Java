@@ -1,5 +1,7 @@
 package Arrays;
 
+import java.util.HashMap;
+
 // https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
 
 public class NRepeatedElement {
