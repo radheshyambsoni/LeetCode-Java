@@ -1,23 +1,19 @@
 package Arrays;
-// https://leetcode.com/problems/richest-customer-wealth/
-// 1672. Richest Customer Wealth
-// Related Topics - Array, Matrix
+
+// https://leetcode.com/problems/richest-customer-wealth/ - Easy
+// Runtime: 0 ms, faster than 100.00% of Java online submissions for Richest Customer Wealth.
+// Memory Usage: 43.1 MB, less than 70.41% of Java online submissions for Richest Customer Wealth.
 
 public class RichestCustomerWealth {
-    static int maximumWealth(int[][] accounts) {
-        int maxWealth=0;
+    public int maximumWealth(int[][] accounts) {
+        int maxSum=0;
         for(int i=0;i<accounts.length;i++){
             int tempSum=0;
-            for(int j=0;j<accounts[i].length;j++){
+            for(int j=0;j<accounts[0].length;j++){
                 tempSum+=accounts[i][j];
             }
-            if(tempSum>maxWealth){maxWealth=tempSum;}
+            maxSum=tempSum>maxSum?tempSum:maxSum;
         }
-        
-        return maxWealth;
-    }
-    public static void main(String[] args) {
-        int accounts[][]={{2,8,7},{7,1,3},{1,9,5}};
-        System.out.println(maximumWealth(accounts));
+        return maxSum;
     }
 }
