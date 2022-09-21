@@ -1,20 +1,17 @@
 package Strings;
 
-// 1832. Check if the Sentence Is Pangram
-// https://leetcode.com/problems/check-if-the-sentence-is-pangram/
-// Related Topics - Hash Table, Strings
+// https://leetcode.com/problems/check-if-the-sentence-is-pangram/submissions/ - Easy
+// Runtime: 0 ms, faster than 100.00% of Java online submissions for Check if the Sentence Is Pangram.
+// Memory Usage: 42.1 MB, less than 57.44% of Java online submissions for Check if the Sentence Is Pangram.
 
 public class IsPangram {
     public boolean checkIfPangram(String sentence) {
-        boolean check[]=new boolean[26];
-        for(Character c:sentence.toCharArray()){
-            check[c-97]=true;
+        if(sentence.length()<26){
+            return false;
         }
-        
-        for(boolean b:check){
-            if(!b){return false;}
+        for(char i='a';i<='z';i++){
+            if(sentence.indexOf(i)==-1){return false;}
         }
-        
         return true;
     }
 }
