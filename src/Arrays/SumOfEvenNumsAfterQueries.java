@@ -6,6 +6,8 @@ import java.util.Arrays;
 // Runtime: 3 ms, faster than 100.00% of Java online submissions for Sum of Even Numbers After Queries.
 // Memory Usage: 50.5 MB, less than 91.32% of Java online submissions for Sum of Even Numbers After Queries.
 
+// Optimisation - removing the extra conditions or proper putting of conditions can help
+
 public class SumOfEvenNumsAfterQueries {
     public static int[] sumEvenAfterQueries(int[] nums, int[][] queries) {
         int ans[]=new int[queries.length];
