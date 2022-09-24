@@ -1,12 +1,12 @@
 package Arrays;
 
 // https://leetcode.com/problems/find-the-duplicate-number/ - Medium
-// Runtime: 3 ms, faster than 99.04% of Java online submissions for Find the Duplicate Number.
-// Memory Usage: 76.4 MB, less than 26.88% of Java online submissions for Find the Duplicate Number.
+// Runtime: 2 ms, faster than 99.89% of Java online submissions for Find the Duplicate Number.
+// Memory Usage: 58.4 MB, less than 99.43% of Java online submissions for Find the Duplicate Number.
 
 public class FindTheDuplicateNumber{
     public int findDuplicate(int[] nums) {
-        // Cyclic sort one is slow as compared to the next one
+        // Cyclic sort
         // int i=0;
         // while(i<nums.length){
         //     int correctIdx=nums[i]-1;
@@ -20,6 +20,8 @@ public class FindTheDuplicateNumber{
         // }     
         // return nums[nums.length-1];
 
+        
+        // fastest one
         int ans=-1;
         boolean[] check=new boolean[nums.length];
         for(int i=0;i<nums.length;i++){
