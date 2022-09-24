@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class DissapearedNumsInArr {
     public List<Integer> findDisappearedNumbers(int[] nums) {
-        // Cyclic sort one is good one not the fastest one
+        // Cyclic sort one is good one but not the fastest one for this problem
         int i=0;
         while(i<nums.length){
             int correctIdx=nums[i]-1;
