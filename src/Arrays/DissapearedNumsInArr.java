@@ -6,10 +6,10 @@ import java.util.ArrayList;
 // https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 // Runtime: 6 ms, faster than 92.01% of Java online submissions for Find All Numbers Disappeared in an Array.
 // Memory Usage: 50.3 MB, less than 96.51% of Java online submissions for Find All Numbers Disappeared in an Array.
+// Google Question
 
 public class DissapearedNumsInArr {
-    public List<Integer> findDisappearedNumbers(int[] nums) {
-        // Cyclic sort one is good one but not the fastest one for this problem
+    public List<Integer> findDisappearedNumbers(int[] nums) {        
         int i=0;
         while(i<nums.length){
             int correctIdx=nums[i]-1;
