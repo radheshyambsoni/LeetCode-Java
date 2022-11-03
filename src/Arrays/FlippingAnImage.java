@@ -4,20 +4,22 @@ package Arrays;
 // Related Topics - Array, Two Pointers, Matrix, Simulation
 
 public class FlippingAnImage {
-    public int[][] flipAndInvertImage(int[][] image) {
+    public int[][] flipAndInvertImage(int[][] image) { 
         int j,k,temp;
-        for(int i=0;i<image.length;i++){
+        for(int i[]:image){
             j=0;
             k=image.length-1;
             while(j<=k){
-                temp=image[i][j];
-                image[i][j]=1-image[i][k];
-                image[i][k]=1-temp;
+                // temp=i[j]^1;
+                // i[j]=i[k]^1;
+                // i[k]=temp;
+                temp=i[j];
+                i[j]=1-i[k];
+                i[k]=1-temp;
                 j++;
                 k--;
             }
-        }
-        
+        }        
         return image;
     }
 }
