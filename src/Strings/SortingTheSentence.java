@@ -37,7 +37,4 @@ public class SortingTheSentence {
         
         // return sentence.toString();
     }
-    public static void main(String[] args) {
-        System.out.println(sortSentence("a1 d4 c3 b2 e5 f6 g7 i9 h8"));
-    }
 }
