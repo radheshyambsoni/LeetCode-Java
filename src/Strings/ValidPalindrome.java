@@ -3,6 +3,8 @@ package Strings;
 // 125. Valid Palindrome - Easy
 // https://leetcode.com/problems/valid-palindrome/
 // Related Topics - Two pointers, String
+// Runtime 2 ms Beats 99.93%
+// Memory 43.6 MB Beats 62.17%
 
 public class ValidPalindrome {
     public static boolean isPalindrome(String s){        
