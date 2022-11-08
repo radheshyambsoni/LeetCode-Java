@@ -1,6 +1,6 @@
 package Strings;
 
-// https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/
+// https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/ - Easy
 
 public class CheckIfBinaryStringHas{
     public boolean checkOnesSegment(String s) {

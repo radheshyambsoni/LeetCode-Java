@@ -1,6 +1,6 @@
 package Strings;
 
-// https://leetcode.com/problems/merge-strings-alternately/
+// https://leetcode.com/problems/merge-strings-alternately/ - Easy
 // Runtime 0 ms Beats 100%
 // Memory 40.4 MB Beats 94.49%
 
