@@ -1,6 +1,6 @@
 package Strings;
 
-// 
+// https://leetcode.com/problems/split-two-strings-to-make-palindrome/ - Medium
 
 public class Split2Str2MakePalind {
     boolean isPalindrome(String s,int i,int j){
