@@ -1,6 +1,6 @@
 package Bitwise;
 
-// https://leetcode.com/problems/single-number/
+// https://leetcode.com/problems/single-number/ - Easy
 // Runtime 1 ms Beats 100%
 // Memory 42.1 MB Beats 94.97%
 
