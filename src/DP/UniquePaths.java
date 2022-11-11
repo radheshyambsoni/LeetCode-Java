@@ -4,7 +4,7 @@ package DP;
 // Memory 40.8 MB Beats 51.95%
 
 public class UniquePaths {
-    public int uniquePaths(int m, int n) {
+    public static int uniquePaths(int m, int n) {
         int dp[][]=new int[m][n];
         
         for(int i=0;i<m;i++){
@@ -20,5 +20,8 @@ public class UniquePaths {
         }
         
         return dp[m-1][n-1];
+    }
+    public static void main(String[] args) {
+        System.out.println(uniquePaths(2,2));
     }
 }
