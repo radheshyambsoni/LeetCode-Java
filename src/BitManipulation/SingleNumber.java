@@ -1,4 +1,4 @@
-package Bitwise;
+package BitManipulation;
 
 // https://leetcode.com/problems/single-number/ - Easy
 // Runtime 1 ms Beats 100%

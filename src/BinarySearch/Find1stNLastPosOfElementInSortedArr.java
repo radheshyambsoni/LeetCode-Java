@@ -6,10 +6,38 @@ package BinarySearch;
 
 public class Find1stNLastPosOfElementInSortedArr {
     public int[] searchRange(int[] nums, int target) {
+        // Runtime 0 ms Beats 100% Memory 45.5 MB Beats 92.37%
         int ans[]={-1,-1};
         ans[0]=search(nums,target,true);
         ans[1]=search(nums,target,false);
         return ans;
+
+        // int start=0,end=nums.length-1;        
+        // while(start<=end){
+        //     int mid=start+(end-start)/2;
+        //     if(nums[mid]==target){
+        //         start=mid;
+        //         end=mid;
+        //         break;       
+        //     }else if(nums[mid]>target){
+        //         end=mid-1;
+        //         mid=start+(end-mid)/2;
+        //     }else{
+        //         start=mid+1;
+        //         mid=start+(end-mid)/2;
+        //     }
+        // }
+        // if(start>end){
+        //     return new int[]{-1,-1};
+        // }
+        // while(start>=0 && nums[start]>=target){
+        //     start--;
+        // }
+        // while(end<nums.length && nums[end]<=target){
+        //     end++;
+        // }
+
+        // return new int[]{start+1,end-1};
     }
 
     int search(int[] nums, int target, boolean startOrEnd) {
