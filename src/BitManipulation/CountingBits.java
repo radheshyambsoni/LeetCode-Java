@@ -2,8 +2,8 @@ package BitManipulation;
 import java.util.Arrays;
 
 // https://leetcode.com/problems/counting-bits/ - Easy
-// Runtime 10 ms Beats 35.35%
-// Memory 48.3 MB Beats 38.38%
+// Runtime 3 ms Beats 77.29%
+// Memory 48.1 MB Beats 56.62%
 
 public class CountingBits {
     public static int[] countBits(int n) {
@@ -13,10 +13,8 @@ public class CountingBits {
         for(int i=1;i<=n;i++){
             temp=i;
             while(temp>0){
-                if((temp&1)==1){
-                    ans[i]++;
-                }
-                temp>>=1;
+                ans[i]++;
+                temp&=temp-1;
             }
         }
         return ans;
