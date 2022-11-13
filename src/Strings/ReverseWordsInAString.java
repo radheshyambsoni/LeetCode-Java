@@ -18,12 +18,11 @@ public class ReverseWordsInAString {
                 i--;
             }
             if(i==0 && s.charAt(i)!=' '){
-                ans.append(s.substring(0, j+1));
-                ans.append(" ");
+                ans.append(s.substring(0, j+1));                
             }else{
-                ans.append(s.substring(i+1, j+1));
-                ans.append(" ");
+                ans.append(s.substring(i+1, j+1));                
             }
+            ans.append(" ");
         }
         ans.deleteCharAt(ans.length()-1);
         return ans.toString();
