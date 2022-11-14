@@ -1,7 +1,7 @@
 package BinarySearch;
 
 public class SearchInRotatedSortedArrayII {
-    // Linear search has better runtime
+    // Linear search has better runtime in this case
     // Runtime: 0 ms, faster than 100.00% of Java online submissions for Search in Rotated Sorted Array II.
     // Memory Usage: 42.3 MB, less than 87.85% of Java online submissions for Search in Rotated Sorted Array II.
     // public boolean search(int[] nums, int target) {
