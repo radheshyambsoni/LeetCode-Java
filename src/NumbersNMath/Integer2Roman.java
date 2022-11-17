@@ -27,7 +27,9 @@ public class Integer2Roman {
         //             switch(digit){
         //                 case 1: roman.insert(0,"X");break;
         //                 case 2: roman.insert(0,"XX");break;
-        //                 case 3: roman.insert(0,"XXX");break;
+        //                 case 3: roman.insert(0,"
+        
+        
         //                 case 4: roman.insert(0,"XL");break;
         //                 case 5: roman.insert(0,"L");break;
         //                 case 6: roman.insert(0,"LX");break;
