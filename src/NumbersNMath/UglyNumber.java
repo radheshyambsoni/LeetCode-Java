@@ -1,5 +1,10 @@
 package NumbersNMath;
 
+// https://leetcode.com/problems/ugly-number/ - Easy
+// Runtime 1 ms Beats 100%
+// Memory 39.7 MB Beats 83.31%
+// Daily Leetcode challenge - 18 Nov 2022
+
 public class UglyNumber {
     public boolean isUgly(int n) {
         if(n<=0){
