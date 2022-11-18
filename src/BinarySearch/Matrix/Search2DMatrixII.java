@@ -1,6 +1,5 @@
-package Arrays;
+package BinarySearch.Matrix;
 
-// Best solution copied from submissions
 // 240. Search a 2D Matrix II - Medium
 // https://leetcode.com/problems/search-a-2d-matrix-ii/
 // Related Topics - Array, Binary Search, Divide n Conquer, Matrix

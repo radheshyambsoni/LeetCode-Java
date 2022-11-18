@@ -1,4 +1,5 @@
-package Arrays;
+package Arrays.Matrix;
+
 // 832. Flipping an Image
 // https://leetcode.com/problems/flipping-an-image/
 // Related Topics - Array, Two Pointers, Matrix, Simulation

@@ -1,4 +1,4 @@
-package BinarySearch;
+package BinarySearch.Matrix;
 
 // https://leetcode.com/problems/search-a-2d-matrix/ - Medium
 // Runtime: 0 ms, faster than 100.00% of Java online submissions for Search a 2D Matrix.

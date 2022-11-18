@@ -1,7 +1,7 @@
-package Arrays;
+package Arrays.Matrix;
 
 // Optimised version came from submissions section
-// https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/submissions/
+// https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/
 // Runtime: 2 ms, faster than 71.71% of Java online submissions for Cells with Odd Values in a Matrix.
 // Memory Usage: 42.7 MB, less than 19.40% of Java online submissions for Cells with Odd Values in a Matrix.
 
