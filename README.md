@@ -1,6 +1,6 @@
 ## Getting Started
 
-- Owner: Radheshyam Bhagwandas Soni 
+- Owner: Radheshyam B. Soni 
 - Email: radheshyambsoni@gmail.com 
 This is a project folder containing my LeetCode submissions in Java.
 
