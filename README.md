@@ -1,7 +1,7 @@
 ## Getting Started
 
 Owner: Radheshyam Bhagwandas Soni 
-Email: radheshyambsoni@yahoo.com 
+Email: radheshyambsoni@gmail.com 
 This is a project folder containing my LeetCode submissions in Java.
 
 ## Folder Structure
