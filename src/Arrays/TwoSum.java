@@ -1,8 +1,10 @@
 package Arrays;
 import java.util.Arrays;
 
-// https://leetcode.com/problems/two-sum/
+// https://leetcode.com/problems/two-sum/ - Easy
 // 1. Two Sum
+// Runtime 1 ms Beats 99.77%
+// Memory 45.3 MB Beats 46.91%
 
 public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {        
