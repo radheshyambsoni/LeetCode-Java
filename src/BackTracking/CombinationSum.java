@@ -5,7 +5,7 @@ import java.util.List;
 
 // https://leetcode.com/problems/combination-sum/ - Medium
 // Runtime 3 ms Beats 88.58%
-// Memory 45 MB Beats 46.88%
+// Memory 44.9 MB Beats 46.88%
 
 public class CombinationSum {
     List<List<Integer>> ans=new ArrayList<>();
@@ -23,7 +23,7 @@ public class CombinationSum {
             if(candidates[i]<=target){
                 temp.add(candidates[i]);
                 findCombinations(candidates, target-candidates[i], temp,i);
-                temp.remove(temp.lastIndexOf(candidates[i]));
+                temp.remove(temp.size()-1);
             }else{
                 continue;
             }
