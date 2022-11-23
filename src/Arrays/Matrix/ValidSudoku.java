@@ -3,6 +3,7 @@ package Arrays.Matrix;
 // https://leetcode.com/problems/valid-sudoku/ - Medium
 // Runtime 2 ms Beats 97.58%
 // Memory 45.4 MB Beats 79.17%
+// Daily LeetCode Challenge - November 23, 2022
 
 public class ValidSudoku{
     public boolean isValidSudoku(char[][] board) {
