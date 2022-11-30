@@ -4,7 +4,7 @@ package LinkedList;
 // Runtime 3 ms Beats 79.86%
 // Memory 48 MB Beats 36.65%
 // Related Topics - Linked List, Math, Recursion
-// Date - November 28, 2022
+// November 28, 2022
 
 // Definition for singly-linked list.
 class ListNode {
