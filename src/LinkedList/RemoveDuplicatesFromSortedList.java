@@ -5,14 +5,6 @@ package LinkedList;
 // Memory 42.2 MB Beats 82.53%
 // December 01, 2022
 
-// Definition for singly-linked list.
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
 public class RemoveDuplicatesFromSortedList {
     public ListNode deleteDuplicates(ListNode head) {        
         ListNode node=head;
