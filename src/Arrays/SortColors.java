@@ -9,23 +9,43 @@ class Solution {
     // Overwrite array with the total number of 0's, then 1's and followed by 2's.
 
     public void sortColors(int[] nums) {
-        int zeros=0,ones=0,twos=0;
-        for(int i:nums){
-            if(i==0){
-                zeros++;
-            }else if(i==1){
-                ones++;
+        // Runtime given above is for second approach
+        
+        // Follow up: Could you come up with a one-pass algorithm using only constant extra space?
+        // dutch national flag algorithm - sorts in one pass
+        // right side of hi will become 2
+        // left side of low will become 0
+        // rest will become 1 
+        int lo=0,hi=nums.length-1,mid=0;
+        while(mid<=hi){
+            if(nums[mid]==0){
+                nums[mid++]=nums[lo];
+                nums[lo++]=0;                
+            }else if(nums[mid]==1){
+                mid++;                
             }else{
-                twos++;
+                nums[mid]=nums[hi];
+                nums[hi--]=2;
             }
         }
-        int i=0;
-        while(zeros-->0){
-            nums[i++]=0;
-        }while(ones-->0){
-            nums[i++]=1;
-        }while(twos-->0){
-            nums[i++]=2;
-        }
+        
+        // int zeros=0,ones=0,twos=0;
+        // for(int i:nums){
+        //     if(i==0){
+        //         zeros++;
+        //     }else if(i==1){
+        //         ones++;
+        //     }else{
+        //         twos++;
+        //     }
+        // }
+        // int i=0;
+        // while(zeros-->0){
+        //     nums[i++]=0;
+        // }while(ones-->0){
+        //     nums[i++]=1;
+        // }while(twos-->0){
+        //     nums[i++]=2;
+        // }
     }
 }
