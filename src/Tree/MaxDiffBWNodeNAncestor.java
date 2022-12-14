@@ -5,7 +5,7 @@ package Tree;
 // Memory 42.2 MB Beats 76.13%
 // December 09, 2022 - Daily Challenge
 
-class Solution {
+public class MaxDiffBWNodeNAncestor {
     int ans;
     public int maxAncestorDiff(TreeNode root) {
         ans=0;
