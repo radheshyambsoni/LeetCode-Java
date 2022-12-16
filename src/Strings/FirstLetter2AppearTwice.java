@@ -4,6 +4,7 @@ package Strings;
 // Runtime 0 ms Beats 100%
 // Memory 40.1 MB Beats 93.4%
 // December 16, 2022
+// Related Topics - String, Hashing, Counting
 
 public class FirstLetter2AppearTwice{
     public char repeatedCharacter(String s) {
