@@ -8,7 +8,7 @@ import java.util.Stack;
 // December 17, 2022 - Daily LeetCode Challenge
 
 public class EvalRPN{
-    public static int evalRPN(String[] tokens){
+    public int evalRPN(String[] tokens){
         Stack<Integer> s=new Stack<>();
         int val1,val2;
         for(int i=0;i<tokens.length;i++){
@@ -30,9 +30,5 @@ public class EvalRPN{
             }
         }
         return s.pop();
-    }
-    public static void main(String[] args) {
-        String[] s={"10","6","9","3","+","-11","*","/","*","17","+","5","+"};
-        System.out.println(evalRPN(s));
     }
 }
