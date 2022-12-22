@@ -1,4 +1,4 @@
-package Stack;
+package StacksNQueues;
 
 // https://leetcode.com/problems/daily-temperatures/ -  Medium
 // Runtime 8 ms Beats 99.73%

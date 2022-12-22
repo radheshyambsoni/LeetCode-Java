@@ -1,4 +1,4 @@
-package Stack;
+package StacksNQueues;
 // https://leetcode.com/problems/valid-parentheses
 // 20. Valid Parentheses
 public class ValidParentheses{
