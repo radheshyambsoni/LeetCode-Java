@@ -1,32 +1,21 @@
-// Took too manys submissions - try to resolve
 package Arrays.TwoPointers;
-// 27. Remove Element
+
 // https://leetcode.com/problems/remove-element/
+// Runtime 0 ms Beats 100%
+// Memory 40.9 MB Beats 81.56%
 // Related Topics - Arrays Two Pointers
+// December 25, 2022
 
 public class RemoveElement{
-    public static int removeElement(int[] nums, int val) {
-        if(val>50){return (nums.length-1);}
-        if(nums.length==0){
-            return 0;
-        }
-        int i=0,j=nums.length-1;
-        while(i<=j){
-            while(j>=0 && nums[j]==val){j--;}
-            if(i>j){break;}
-            if(nums[i]==val){
+    public int removeElement(int[] nums, int val) {
+        int j=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]!=val){
+                int temp=nums[i];
                 nums[i]=nums[j];
-                nums[j]=val;
+                nums[j++]=temp;
             }
-            i++;
         }
-        return j+1;
-    }
-    public static void main(String[] args) {
-        int nums[]={3};
-        int k=removeElement(nums,3);
-        for(int i=0;i<k;i++){
-            System.out.print(nums[i]+" ");
-        }
+        return j;
     }
 }
