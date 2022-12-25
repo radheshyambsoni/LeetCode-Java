@@ -1,4 +1,4 @@
-package NumbersNMath;
+package NumbersNMath.TwoPointers;
 
 // https://leetcode.com/problems/happy-number/ - Easy
 // Runtime 1 ms Beats 98.15%

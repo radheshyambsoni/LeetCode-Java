@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.TwoPointers;
 
 // https://leetcode.com/problems/sort-colors/ - Medium
 // Related Topics - Array, Two Pointers, Sorting

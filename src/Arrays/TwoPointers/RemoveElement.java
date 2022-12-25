@@ -1,5 +1,5 @@
 // Took too manys submissions - try to resolve
-package Arrays;
+package Arrays.TwoPointers;
 // 27. Remove Element
 // https://leetcode.com/problems/remove-element/
 // Related Topics - Arrays Two Pointers

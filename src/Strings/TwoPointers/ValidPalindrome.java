@@ -1,4 +1,4 @@
-package Strings;
+package Strings.TwoPointers;
 
 // 125. Valid Palindrome - Easy
 // https://leetcode.com/problems/valid-palindrome/

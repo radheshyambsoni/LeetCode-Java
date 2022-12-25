@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.TwoPointers;
 import java.util.Arrays;
 
 // 88. Merge Sorted Array
