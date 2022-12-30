@@ -7,7 +7,7 @@ import java.util.List;
 // Runtime 4 ms Beats 83.55%
 // Memory 45.3 MB Beats 61.29%
 
-class Solution {
+public class NQueens {
     List<List<String>> ans=new ArrayList<>();
     public List<List<String>> solveNQueens(int n) {
         nQueens(new boolean[n][n],0);

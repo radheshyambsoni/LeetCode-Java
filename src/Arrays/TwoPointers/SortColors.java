@@ -4,7 +4,7 @@ package Arrays.TwoPointers;
 // Related Topics - Array, Two Pointers, Sorting
 // Runtime: 0 ms, faster than 100.00% of Java online submissions for Sort Colors.
 // Memory Usage: 40.4 MB, less than 99.29% of Java online submissions for Sort Colors.
-class Solution {
+public class SortColors {
     // Hint used: Iterate the array counting number of 0's, 1's, and 2's.
     // Overwrite array with the total number of 0's, then 1's and followed by 2's.
 
