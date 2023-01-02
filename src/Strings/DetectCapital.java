@@ -1,35 +1,22 @@
 package Strings;
 
-// 520. Detect Capital - Easy
-// https://leetcode.com/problems/detect-capital/
-// Related Topics - String
-// Runtime: 2 ms, faster than 68.13% of Java online submissions for Detect Capital.
-// Memory Usage: 42 MB, less than 82.22% of Java online submissions for Detect Capital.
+// https://leetcode.com/problems/detect-capital/ - Easy
+// Runtime 1 ms Beats 100%
+// Memory 40.8 MB Beats 82.57%
+// January 02, 2023 - Daily Challenge
 
 public class DetectCapital{
     public boolean detectCapitalUse(String word) {
-        if(word.length()==1){return true;}
-        if(word.charAt(0)>='A' && word.charAt(0)<='Z'){
-            if(word.charAt(1)>='A' && word.charAt(1)<='Z'){
-                for(int i=2;i<word.length();i++){
-                    if(!(word.charAt(i)>='A' && word.charAt(i)<='Z')){
-                        return false;
-                    }
-                }
-            }else{
-                for(int i=2;i<word.length();i++){
-                    if(word.charAt(i)>='A' && word.charAt(i)<='Z'){
-                        return false;
-                    }
-                }
-            }
-        }else{
-            for(int i=1;i<word.length();i++){
-                if(word.charAt(i)>='A' && word.charAt(i)<='Z'){
-                    return false;
-                }
+        if(word.length()==1){
+            return true;
+        }
+        int caps=0;
+        for(char c:word.toCharArray()){
+            if(c<='Z'){
+                caps++;
             }
         }
-        return true;
+
+        return (caps==1 && word.charAt(0)<='Z') || caps==word.length() || caps==0;
     }
 }
