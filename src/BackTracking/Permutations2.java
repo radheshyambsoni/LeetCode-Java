@@ -11,6 +11,32 @@ import java.util.Set;
 // December 14, 2022
 
 public class Permutations2 {
+    // Set<List<Integer>> set=new HashSet<>();
+    // public List<List<Integer>> permuteUnique(int[] nums) {
+    //     Arrays.sort(nums);
+    //     addPermutations(nums,0);
+    //     return new ArrayList<>(set);
+    // }
+    // private void addPermutations(int[] arr,int index) {
+    //     if(index==arr.length){
+    //         List<Integer> ds=new ArrayList<>();
+    //         for(int i:arr){
+    //             ds.add(i);
+    //         }
+    //         set.add(ds);
+    //     }
+    //     for(int i=index;i<arr.length;i++){
+    //         swap(arr,index,i);
+    //         addPermutations(arr, index+1);
+    //         swap(arr,index,i);
+    //     }
+    // }
+    // private void swap(int[] arr, int index, int i) {
+    //     int temp=arr[index];
+    //     arr[index]=arr[i];
+    //     arr[i]=temp;
+    // }
+    
     List<List<Integer>> ans;
     Set<List<Integer>> set=new HashSet<>();
     public List<List<Integer>> permuteUnique(int[] nums) {
