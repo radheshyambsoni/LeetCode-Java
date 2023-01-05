@@ -2,7 +2,7 @@ package Arrays;
 
 // 697. Degree of an Array-Easy
 // https://leetcode.com/problems/degree-of-an-array/
-// Related Topics-Array Hash Table
+// Related Topics - Array, Hash Table
 // Runtime: 2 ms, faster than 100.00% of Java online submissions for Degree of an Array.
 // Memory Usage: 47.1 MB, less than 89.11% of Java online submissions for Degree of an Array.
 
