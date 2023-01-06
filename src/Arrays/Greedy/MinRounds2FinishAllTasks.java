@@ -5,7 +5,7 @@ import java.util.Arrays;
 // https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/ - Medium
 // Runtime 16 ms Beats 95.13%
 // Memory 100.1 MB Beats 55.65%
-// January 04, 2023
+// January 04, 2023 - Daily Challenge
 
 public class MinRounds2FinishAllTasks{
     public int minimumRounds(int[] tasks){

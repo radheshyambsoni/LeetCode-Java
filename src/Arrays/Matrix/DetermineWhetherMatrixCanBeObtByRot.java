@@ -3,7 +3,7 @@ package Arrays.Matrix;
 // https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/ - Easy
 // Runtime 0 ms Beats 100%
 // Memory 40.3 MB Beats 96.79%
-// January 05, 2022
+// January 05, 2023
 
 public class DetermineWhetherMatrixCanBeObtByRot {
     public boolean findRotation(int[][] mat, int[][] target) {
@@ -19,7 +19,7 @@ public class DetermineWhetherMatrixCanBeObtByRot {
             return true;
         }
         rotate(mat);
-        if(check(mat,target)){ //2
+        if(check(mat,target)){ //3
             return true;
         }
         return false;

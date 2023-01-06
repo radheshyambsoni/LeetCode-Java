@@ -3,7 +3,7 @@ package Strings;
 // https://leetcode.com/problems/delete-columns-to-make-sorted/ - Easy
 // Runtime 14 ms Beats 54.16%
 // Memory 50.4 MB Beats 7.42%
-// January 03, 2022 - Daily Challenge
+// January 03, 2023 - Daily Challenge
 
 public class DeleteCols2MakeSorted {
     public int minDeletionSize(String[] strs) {
