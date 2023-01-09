@@ -1,4 +1,4 @@
-package Tree;
+package Trees;
 
 // https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/ - Medium
 // Runtime 1 ms Beats 80.2%

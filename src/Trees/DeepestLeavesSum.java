@@ -1,4 +1,4 @@
-package Tree;
+package Trees;
 
 // https://leetcode.com/problems/deepest-leaves-sum/ - Medium
 // Runtime 1 ms Beats 100%

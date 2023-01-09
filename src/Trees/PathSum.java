@@ -1,4 +1,4 @@
-package Tree;
+package Trees;
 
 // https://leetcode.com/problems/path-sum/ - Easy
 // Runtime 0 ms Beats 100%
