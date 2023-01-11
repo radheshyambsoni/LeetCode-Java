@@ -1,4 +1,4 @@
-package ConditionalsNLoops;
+package NumbersNMath;
 
 // https://leetcode.com/problems/palindrome-number/ - Easy
 // Runtime 8 ms Beats 99.83%
