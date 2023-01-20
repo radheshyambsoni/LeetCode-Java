@@ -1,4 +1,4 @@
-package BackTracking;
+package BackTracking.Medium;
 
 // https://leetcode.com/problems/word-search/ - Medium
 // Runtime 85 ms Beats 96.33%

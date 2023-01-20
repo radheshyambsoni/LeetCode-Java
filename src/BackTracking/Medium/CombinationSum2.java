@@ -1,10 +1,10 @@
-package BackTracking;
+package BackTracking.Medium;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-// https://leetcode.com/problems/combination-sum-ii/
+// https://leetcode.com/problems/combination-sum-ii/ - Medium
 // Runtime 2 ms Beats 99.97%
 // Memory 42.9 MB Beats 73.62%
 // December 29, 2022

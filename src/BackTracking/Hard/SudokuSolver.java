@@ -1,4 +1,4 @@
-package BackTracking;
+package BackTracking.Hard;
 
 // https://leetcode.com/problems/sudoku-solver/ - Hard
 // Runtime 17 ms Beats 52.48%
