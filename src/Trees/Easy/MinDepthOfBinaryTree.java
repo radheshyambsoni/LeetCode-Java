@@ -1,6 +1,6 @@
 package Trees.Easy;
 
-// https://leetcode.com/problems/minimum-depth-of-binary-tree/ - Easy
+// https://leetcode.com/problems/minimum-depth-of-binary-tree/
 // Runtime 7 ms Beats 79.14%
 // Memory 95.7 MB Beats 7.53%
 // January 21, 2023

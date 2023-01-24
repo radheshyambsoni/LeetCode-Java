@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/truncate-sentence/ - Easy
+// https://leetcode.com/problems/truncate-sentence/
 // Runtime 1 ms Beats 95.10%
 // Memory 42.4 MB Beats 62.74%
 // December 05, 2022

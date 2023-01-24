@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/valid-palindrome-ii/ - Easy
+// https://leetcode.com/problems/valid-palindrome-ii/
 // Runtime 9 ms Beats 83.83%
 // Memory 42.4 MB Beats 99.89%
 

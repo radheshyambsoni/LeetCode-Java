@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-// https://leetcode.com/problems/permutations-ii/ - Medium
+// https://leetcode.com/problems/permutations-ii/
 // Runtime 38 ms Beats 25.25%
 // Memory 43.1 MB Beats 88.72%
 // December 14, 2022

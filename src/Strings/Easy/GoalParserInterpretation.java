@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/goal-parser-interpretation/ - Easy
+// https://leetcode.com/problems/goal-parser-interpretation/
 // Runtime 1 ms Beats 93.56%
 // Memory 42.1 MB Beats 55.55%
 

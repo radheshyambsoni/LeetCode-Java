@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// // https://leetcode.com/problems/shuffle-string/ - Easy
+// // https://leetcode.com/problems/shuffle-string/
 // Runtime 2 ms Beats 77.30%
 // Memory 45.1 MB Beats 32.75%
 

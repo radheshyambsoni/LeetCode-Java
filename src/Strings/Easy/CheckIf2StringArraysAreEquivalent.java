@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/ - Easy
+// https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/
 // Runtime 0 ms Beats 100%
 // Memory 40.4 MB Beats 85.53%
 

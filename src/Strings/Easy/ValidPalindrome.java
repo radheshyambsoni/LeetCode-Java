@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// 125. Valid Palindrome - Easy
+// 125. Valid Palindrome
 // https://leetcode.com/problems/valid-palindrome/
 // Related Topics - Two pointers, String
 // Runtime 2 ms Beats 99.93%
@@ -31,9 +31,5 @@ public class ValidPalindrome {
             }
         }
         return true;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(isPalindrome("0p"));
     }
 }

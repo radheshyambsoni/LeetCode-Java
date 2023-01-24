@@ -1,6 +1,6 @@
 package Trees.Easy;
 
-// https://leetcode.com/problems/balanced-binary-tree/ - Easy
+// https://leetcode.com/problems/balanced-binary-tree/
 // Runtime 0 ms Beats 100%
 // Memory 41.5 MB Beats 98.78%
 // January 15, 2023

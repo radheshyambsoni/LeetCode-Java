@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/add-binary/ - Easy
+// https://leetcode.com/problems/add-binary/
 // Related Topics - Math, String, Bit Manipulation, Simulation
 // Runtime 1 ms Beats 100%
 // Memory 40.8 MB Beats 95.91%

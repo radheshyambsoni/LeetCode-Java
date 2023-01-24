@@ -3,7 +3,7 @@ package BackTracking.Medium;
 import java.util.ArrayList;
 import java.util.List;
 
-// https://leetcode.com/problems/combination-sum-iii/ - Medium
+// https://leetcode.com/problems/combination-sum-iii/
 // Runtime 0 ms Beats 100%
 // Memory 40 MB Beats 73.7%
 // January 19, 2023

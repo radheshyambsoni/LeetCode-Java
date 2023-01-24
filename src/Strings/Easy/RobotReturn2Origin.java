@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/robot-return-to-origin/ - Easy
+// https://leetcode.com/problems/robot-return-to-origin/
 // Runtime 6 ms Beats 90.44%
 // Memory 45.9 MB Beats 5.8%
 

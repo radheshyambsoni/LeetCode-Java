@@ -2,7 +2,7 @@ package Trees.Easy;
 
 import java.util.ArrayList;
 
-// https://leetcode.com/problems/leaf-similar-trees/ - Easy
+// https://leetcode.com/problems/leaf-similar-trees/
 // Runtime 0 ms Beats 100%
 // Memory 40.1 MB Beats 90.96%
 // December 08, 2022 - Daily Challenge

@@ -3,7 +3,7 @@ package BackTracking.Medium;
 import java.util.ArrayList;
 import java.util.List;
 
-// https://leetcode.com/problems/generate-parentheses/ - Medium
+// https://leetcode.com/problems/generate-parentheses/
 // Runtime 1 ms Beats 97.95%
 // Memory 43.6 MB Beats 54.82%
 // December 01, 2022

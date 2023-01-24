@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/sum-of-digits-of-string-after-convert/submissions/ - Easy
+// https://leetcode.com/problems/sum-of-digits-of-string-after-convert/submissions/
 // Runtime: 1 ms, faster than 98.62% of Java online submissions for Sum of Digits of String After Convert.
 // Memory Usage: 42.3 MB, less than 63.62% of Java online submissions for Sum of Digits of String After Convert.
 

@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/first-letter-to-appear-twice/ - Easy
+// https://leetcode.com/problems/first-letter-to-appear-twice/
 // Runtime 0 ms Beats 100%
 // Memory 40.1 MB Beats 93.4%
 // December 16, 2022

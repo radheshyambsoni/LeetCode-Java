@@ -2,7 +2,7 @@ package Strings.Easy;
 
 import java.util.HashMap;
 
-// https://leetcode.com/problems/word-pattern/ - Easy
+// https://leetcode.com/problems/word-pattern/
 // Runtime 1 ms Beats 89.97%
 // Memory 41.7 MB Beats 12.51%
 // January 01, 2023 - Daily Challenge

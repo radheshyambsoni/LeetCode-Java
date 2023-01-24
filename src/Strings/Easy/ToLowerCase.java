@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// 709. To Lower Case - Easy
+// 709. To Lower Case
 // https://leetcode.com/problems/to-lower-case/
 // Related Topics - String
 // Runtime: 1 ms, faster than 80.26% of Java online submissions for To Lower Case.

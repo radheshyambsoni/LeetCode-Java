@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/maximum-repeating-substring/ - Easy
+// https://leetcode.com/problems/maximum-repeating-substring/
 // Runtime 1 ms Beats 98.12%
 // Memory 42.5 MB Beats 23.9%
 

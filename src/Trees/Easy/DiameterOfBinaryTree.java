@@ -1,6 +1,6 @@
 package Trees.Easy;
 
-// https://leetcode.com/problems/diameter-of-binary-tree/ - Easy
+// https://leetcode.com/problems/diameter-of-binary-tree/
 // Runtime 0 ms Beats 100%
 // Memory 42 MB Beats 79.47%
 // January 16, 2023

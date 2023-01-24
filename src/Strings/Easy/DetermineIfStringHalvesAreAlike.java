@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/determine-if-string-halves-are-alike/ - Easy
+// https://leetcode.com/problems/determine-if-string-halves-are-alike/
 // December 01, 2022 - Daily LeetCode Challenge
 
 public class DetermineIfStringHalvesAreAlike {

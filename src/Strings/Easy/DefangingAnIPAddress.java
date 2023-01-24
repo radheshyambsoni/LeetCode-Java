@@ -1,5 +1,6 @@
 package Strings.Easy;
-// https://leetcode.com/problems/defanging-an-ip-address/ - Easy
+
+// https://leetcode.com/problems/defanging-an-ip-address/
 // Runtime: 0 ms, faster than 100.00% of Java online submissions for Defanging an IP Address.
 // Memory Usage: 41.3 MB, less than 82.94% of Java online submissions for Defanging an IP Address.
 

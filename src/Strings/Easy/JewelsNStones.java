@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/jewels-and-stones/ - Easy
+// https://leetcode.com/problems/jewels-and-stones/
 
 public class JewelsNStones {
     public static int numJewelsInStones(String jewels, String stones) {

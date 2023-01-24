@@ -3,7 +3,7 @@ package Trees.Easy;
 import java.util.ArrayList;
 import java.util.List;
 
-// https://leetcode.com/problems/binary-tree-preorder-traversal/ - Easy
+// https://leetcode.com/problems/binary-tree-preorder-traversal/
 // Runtime 0 ms Beats 100%
 // Memory 40.4 MB Beats 81.74%
 // January 09, 2023 - Daily Challenge

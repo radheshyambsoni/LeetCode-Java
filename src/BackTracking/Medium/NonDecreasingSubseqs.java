@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-// https://leetcode.com/problems/non-decreasing-subsequences/ - Medium
+// https://leetcode.com/problems/non-decreasing-subsequences/
 // Runtime 13 ms Beats 63.9%
 // Memory 49.2 MB Beats 69.9%
 // January 20, 2023 - Daily Challenge

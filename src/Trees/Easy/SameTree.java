@@ -1,6 +1,6 @@
 package Trees.Easy;
 
-// https://leetcode.com/problems/same-tree/ - Easy
+// https://leetcode.com/problems/same-tree/
 // Runtime 0 ms Beats 100%
 // Memory 40 MB Beats 62.93%
 // January 10, 2023 - Daily Challenge

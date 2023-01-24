@@ -1,6 +1,6 @@
 package Trees.Easy;
 
-// https://leetcode.com/problems/range-sum-of-bst/ - Easy
+// https://leetcode.com/problems/range-sum-of-bst/
 // Runtime  0 ms Beats 100%
 // Memory 49.9 MB Beats 88.18%
 // December 07, 2022 - Daily Challenge

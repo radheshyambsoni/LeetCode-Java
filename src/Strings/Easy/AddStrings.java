@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-//https://leetcode.com/problems/add-strings/ - Easy
+//https://leetcode.com/problems/add-strings/
 public class AddStrings{
     public String addStrings(String num1, String num2) {
         StringBuilder ans=new StringBuilder("");

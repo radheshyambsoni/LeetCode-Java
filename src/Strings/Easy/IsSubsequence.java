@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/is-subsequence/ - Easy
+// https://leetcode.com/problems/is-subsequence/
 // Runtime 0 ms Beats 100%
 // Memory 40.4 MB Beats 74.91%
 // December 30, 2022

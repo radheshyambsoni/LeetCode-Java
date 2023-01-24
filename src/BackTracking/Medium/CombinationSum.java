@@ -3,7 +3,7 @@ package BackTracking.Medium;
 import java.util.ArrayList;
 import java.util.List;
 
-// https://leetcode.com/problems/combination-sum/ - Medium
+// https://leetcode.com/problems/combination-sum/
 // Runtime 3 ms Beats 88.58%
 // Memory 44.9 MB Beats 46.88%
 

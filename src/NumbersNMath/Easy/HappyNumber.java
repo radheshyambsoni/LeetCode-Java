@@ -1,6 +1,6 @@
 package NumbersNMath.Easy;
 
-// https://leetcode.com/problems/happy-number/ - Easy
+// https://leetcode.com/problems/happy-number/
 // Runtime 1 ms Beats 98.15%
 // Memory 41.1 MB Beats 56.55%
 // Related Topics - Hash Table, Math, Two Pointers

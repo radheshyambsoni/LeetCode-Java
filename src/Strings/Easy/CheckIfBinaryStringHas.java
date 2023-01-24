@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/ - Easy
+// https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/
 
 public class CheckIfBinaryStringHas{
     public boolean checkOnesSegment(String s) {

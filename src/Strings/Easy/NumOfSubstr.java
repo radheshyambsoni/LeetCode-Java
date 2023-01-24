@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/ - Easy
+// https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/
 // Runtime 1 ms Beats 88.71%
 // Memory 42.8 MB Beats 27.37%
 

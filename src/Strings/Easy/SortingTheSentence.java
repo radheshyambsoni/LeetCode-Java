@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/sorting-the-sentence/ - Easy
+// https://leetcode.com/problems/sorting-the-sentence/
 
 public class SortingTheSentence {
     public static String sortSentence(String s) {

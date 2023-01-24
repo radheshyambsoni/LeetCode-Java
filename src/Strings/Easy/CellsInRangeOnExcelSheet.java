@@ -3,7 +3,7 @@ package Strings.Easy;
 import java.util.ArrayList;
 import java.util.List;
 
-// https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/description/ - Easy
+// https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/description/
 // Runtime 1 ms Beats 100%
 // Memory 42.8 MB Beats 98.15%
 

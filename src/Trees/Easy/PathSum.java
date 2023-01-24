@@ -1,6 +1,6 @@
 package Trees.Easy;
 
-// https://leetcode.com/problems/path-sum/ - Easy
+// https://leetcode.com/problems/path-sum/
 // Runtime 0 ms Beats 100%
 // Memory 42.5 MB Beats 69.79%
 // January 01, 2023

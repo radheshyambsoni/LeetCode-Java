@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/delete-columns-to-make-sorted/ - Easy
+// https://leetcode.com/problems/delete-columns-to-make-sorted/
 // Runtime 14 ms Beats 54.16%
 // Memory 50.4 MB Beats 7.42%
 // January 03, 2023 - Daily Challenge

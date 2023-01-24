@@ -1,6 +1,6 @@
 package Strings.Easy;
 
-// https://leetcode.com/problems/detect-capital/ - Easy
+// https://leetcode.com/problems/detect-capital/
 // Runtime 1 ms Beats 100%
 // Memory 40.8 MB Beats 82.57%
 // January 02, 2023 - Daily Challenge

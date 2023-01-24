@@ -2,7 +2,7 @@ package Strings.Easy;
 
 import java.util.ArrayList;
 
-// https://leetcode.com/problems/reverse-vowels-of-a-string/ - Easy
+// https://leetcode.com/problems/reverse-vowels-of-a-string/
 // Runtime 4 ms Beats 85.2%
 // Memory 43.5 MB Beats 61.48%
 // January 14, 2023

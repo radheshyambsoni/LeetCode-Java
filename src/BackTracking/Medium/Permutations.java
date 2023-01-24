@@ -3,7 +3,7 @@ package BackTracking.Medium;
 import java.util.List;
 import java.util.ArrayList;
 
-// https://leetcode.com/problems/permutations/ - Medium
+// https://leetcode.com/problems/permutations/
 
 public class Permutations{
     // Runtime 1 ms Beats 95.48%
