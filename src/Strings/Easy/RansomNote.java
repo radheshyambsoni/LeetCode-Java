@@ -4,8 +4,9 @@ package Strings.Easy;
 // https://leetcode.com/problems/ransom-note/
 // Runtime 2 ms Beats 99.8%
 // Memory 42.4 MB Beats 92.92%
+// January 29, 2023
 
-class Solution {
+public class RansomNote {
     public boolean canConstruct(String ransomNote, String magazine) {
         if(ransomNote.length()>magazine.length()){
             return false;

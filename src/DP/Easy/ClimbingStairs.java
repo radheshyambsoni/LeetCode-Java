@@ -1,8 +1,9 @@
-package NumbersNMath.Easy;
+package DP.Easy;
 
 // 70. Climbing Stairs
 // https://leetcode.com/problems/climbing-stairs/
-// Related Topics - Math, DP, Memorization
+// Runtime 0 ms Beats 100%
+// Memory 38.7 MB Beats 96.65%
 // December 12, 2022 - Daily Challenge
 
 public class ClimbingStairs{

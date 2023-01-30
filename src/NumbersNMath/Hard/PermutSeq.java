@@ -7,8 +7,9 @@ import java.util.List;
 // https://leetcode.com/problems/permutation-sequence/
 // Runtime 1 ms Beats 99.67%
 // Memory 39.9 MB Beats 75.13%
+// January 28, 2023
 
-class Solution {
+public class PermutSeq {
     public String getPermutation(int n, int k) {
         int fact=1;
         List<Integer> nums=new ArrayList<>();

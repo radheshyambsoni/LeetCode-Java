@@ -2,7 +2,7 @@ package BinarySearch.Easy;
 
 // 441. Arranging Coins
 // https://leetcode.com/problems/arranging-coins/
-// Related Topics - Math, Binary Search
+// January 26, 2023
 
 public class ArrangingCoins{
     public int arrangeCoins(int n) {        

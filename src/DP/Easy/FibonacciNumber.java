@@ -1,8 +1,9 @@
-package NumbersNMath.Easy;
+package DP.Easy;
 
 // 509. Fibonacci Number
 // https://leetcode.com/problems/fibonacci-number/
-// Related Topics - Math, DP, Recursion, Memorization
+// Runtime 0 ms Beats 100%
+// Memory 40.3 MB Beats 33.49%
 
 public class FibonacciNumber {
     public int fib(int n) {
