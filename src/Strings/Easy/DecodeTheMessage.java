@@ -2,12 +2,13 @@ package Strings.Easy;
 
 import java.util.HashMap;
 
+// 2325. Decode the Message
 // https://leetcode.com/problems/decode-the-message/
 // Runtime 3 ms Beats 98.43%
 // Memory 42.3 MB Beats 91.26%
 
 public class DecodeTheMessage{
-    public static String decodeMessage(String key, String message) {
+    public String decodeMessage(String key, String message) {
         HashMap<Character,Character> hm=new HashMap<>();
         char c='a';
         for(int i=0;i<key.length();i++){
@@ -24,8 +25,5 @@ public class DecodeTheMessage{
             }
         }
         return String.valueOf(msg);
-    }
-    public static void main(String[] args) {
-        System.out.println(decodeMessage("the quick brown fox jumps over the lazy dog", "vkbs bs t suepuv"));
-    }
+    }    
 }
