@@ -4,6 +4,7 @@ package Arrays.Easy;
 // https://leetcode.com/problems/find-lucky-integer-in-an-array/
 // Runtime 1 ms Beats 100%
 // Memory 41.8 MB Beats 71.36%
+// February 04, 2023
 
 public class FindLuckyIntInAnArr {
     public int findLucky(int[] arr) {
