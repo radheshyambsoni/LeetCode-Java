@@ -6,6 +6,7 @@ import java.util.ArrayList;
 // https://leetcode.com/problems/intersection-of-two-arrays/
 // Runtime 1 ms Beats 99.36%
 // Memory 42 MB Beats 96.21%
+// February 06, 2023
 
 public class IntersectionOf2Arr {
     public int[] intersection(int[] nums1, int[] nums2) {
