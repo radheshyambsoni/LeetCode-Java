@@ -1,12 +1,13 @@
 package DP.Medium;
 
+// 62. Unique Paths
 // https://leetcode.com/problems/unique-paths/
-// December 09, 2022 - 0ms one
+// Runtime 0 ms Beats 100%
+// Memory 41.6 MB Beats 10.19%
+// December 09, 2022
 
 public class UniquePaths {
     public int uniquePaths(int m, int n) {
-        // Runtime 0 ms Beats 100%
-        // Memory 41.6 MB Beats 10.19%
         int arr[]=new int[n];
         for(int i=0;i<n;i++){
             arr[i]=1;
