@@ -1,57 +1,26 @@
 package DP.Medium;
 
+// 63. Unique Paths II
 // https://leetcode.com/problems/unique-paths-ii/
-// Runtime 1 ms Beats 80.58% 
-// Memory 42.4 MB Beats 29.64%
+// Runtime 0 ms Beats 100%
+// Memory 40.5 MB Beats 62.44%
+// February 10, 2023
+// complete recursion to all types dp solution - https://github.com/radheshyambsoni/DSA_KK/blob/master/src/TUF/DP/DP09_MazeObstacles.java
 
 public class UniquePaths2 {
-    public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-        int m=obstacleGrid.length-1,n=obstacleGrid[0].length-1;
-        if(obstacleGrid[0][0]==1 || obstacleGrid[m][n]==1){
-            return 0;
-        }
-
-        boolean flag=false;
-        for(int i=0;i<=m;i++){
-            if(obstacleGrid[i][0]==1){
-                obstacleGrid[i][0]=-1;
-                flag=true;
-                continue;
-            }
-            if(flag){
-                obstacleGrid[i][0]=0;
-            }else{
-                obstacleGrid[i][0]=1;
-            }
-        }
-        flag=false;
-        for(int i=1;i<=n;i++){
-            if(obstacleGrid[0][i]==1){
-                obstacleGrid[0][i]=-1;
-                flag=true;
-                continue;
-            }
-            if(flag){
-                obstacleGrid[0][i]=0;
-            }else{
-                obstacleGrid[0][i]=1;
-            }
-        }
-        for(int i=1;i<=m;i++){
-            for(int j=1;j<=n;j++){
-                if(obstacleGrid[i][j]==1){
-                    obstacleGrid[i][j]=-1;
-                    continue;
+    public int uniquePathsWithObstacles(int[][] maze) {
+        for(int i=0;i<maze.length;i++){
+            for(int j=0;j<maze[0].length;j++){
+                if(maze[i][j]==1){
+                    maze[i][j]=0;
+                }else if(i==0 && j==0){
+                    maze[0][0]=1;
                 }
-                if(obstacleGrid[i][j-1]!=-1){
-                    obstacleGrid[i][j]=obstacleGrid[i][j-1];
-                }
-                if(obstacleGrid[i-1][j]!=-1){
-                    obstacleGrid[i][j]+=obstacleGrid[i-1][j];
+                else{                    
+                    maze[i][j]=(i>0?(maze[i-1][j]):0)+(j>0?maze[i][j-1]:0);
                 }
             }
         }
-        
-        return obstacleGrid[m][n]==-1?0:obstacleGrid[m][n];
+        return maze[maze.length-1][maze[0].length-1];
     }
 }
