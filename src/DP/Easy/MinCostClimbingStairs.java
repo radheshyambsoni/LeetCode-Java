@@ -37,7 +37,7 @@ public class MinCostClimbingStairs {
 
         // tabulation
         // but with a catch
-        // in recursion, we did not have a method to check if the value is calculated or not
+        // in memoization, we did not have a method to check if the value required is calculated or not
         // i.e the condition in memoization if we eleminate the dp array from the scenario
         // but here we can use cost itself to store the values
         // so no more need of space optimization
