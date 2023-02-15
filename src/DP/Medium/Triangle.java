@@ -7,6 +7,7 @@ import java.util.List;
 // Runtime 2 ms Beats 87.28%
 // Memory 41.4 MB Beats 99.43%
 // February 14, 2023
+// Complete solution - https://github.com/radheshyambsoni/DSA_KK/blob/master/src/TUF/DP/DP11_Triangle.java
 
 public class Triangle {
     public int minimumTotal(List<List<Integer>> triangle) {
