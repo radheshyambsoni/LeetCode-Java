@@ -1,5 +1,7 @@
 package Arrays.Easy;
 
+import java.util.Arrays;
+
 // 1051. Height Checker
 // https://leetcode.com/problems/height-checker/
 // Runtime 1 ms Beats 91.2%
