@@ -6,7 +6,7 @@ package Arrays.Easy;
 // Memory 42.6 MB Beats 32.45%
 // Mar 11, 2023
 
-pubilc class ToeplitzMatrix_766 {
+public class ToeplitzMatrix_766 {
     public boolean isToeplitzMatrix(int[][] matrix) {
         int m=matrix.length,n=matrix[0].length;
 
