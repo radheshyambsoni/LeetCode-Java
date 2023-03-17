@@ -1,12 +1,13 @@
 package LinkedList.Medium;
 
-// https://leetcode.com/problems/add-two-numbers/description/ - Medium
+// 2. Add Two Numbers
+// https://leetcode.com/problems/add-two-numbers/ - Medium
 // Runtime 3 ms Beats 79.86%
 // Memory 48 MB Beats 36.65%
 // Related Topics - Linked List, Math, Recursion
 // November 28, 2022
 
-public class AddTwoNumbers {
+public class Add2Nums_2 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int val=l1.val+l2.val;
         ListNode ans=new ListNode(val%10);
