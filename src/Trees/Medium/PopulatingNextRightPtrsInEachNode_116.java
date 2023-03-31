@@ -1,0 +1,33 @@
+package Trees.Medium;
+
+import java.util.LinkedList;
+
+// 116. Populating Next Right Pointers in Each Node
+// https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+// Runtime 9 ms Beats 5.99%
+// Memory 42.5 MB Beats 62.90%
+// Mar 31, 2023
+
+public class PopulatingNextRightPtrsInEachNode_116 {
+    public Node connect(Node root) {
+        if(root==null) return null;
+        root.next=null;
+        LinkedList<Node> q=new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()){
+            int level=q.size();
+            for(int i=0;i<level;i++){
+                Node node=q.poll();
+                if(node.left!=null){q.add(node.left);}
+                if(node.right!=null){q.add(node.right);}
+            }
+            if(q.isEmpty()) break;
+            Node temp=q.peek();
+            for(int i=1;i<q.size();i++){
+                temp.next=q.get(i);
+                temp=temp.next;
+            }
+        }
+        return root;
+    }
+}
