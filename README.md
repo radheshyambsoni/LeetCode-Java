@@ -3,7 +3,7 @@
 - Owner: Radheshyam Soni 
 - :email: - radheshyambsoni@gmail.com
 
-- This is a project folder containing my LeetCode submissions in Java.
+- This repo contains my LeetCode submissions in Java.
 
 ## Folder Structure
 
