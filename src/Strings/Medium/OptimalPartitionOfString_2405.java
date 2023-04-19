@@ -1,5 +1,7 @@
 package Strings.Medium;
 
+import java.util.Arrays;
+
 // 2405. Optimal Partition of String
 // https://leetcode.com/problems/optimal-partition-of-string/
 // Runtime 14 ms Beats 77.74%

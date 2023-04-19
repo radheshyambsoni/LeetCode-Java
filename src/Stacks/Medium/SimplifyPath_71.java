@@ -1,5 +1,8 @@
 package Stacks.Medium;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 // 71. Simplify Path
 // https://leetcode.com/problems/simplify-path/
 // Runtime 3 ms Beats 98.32%

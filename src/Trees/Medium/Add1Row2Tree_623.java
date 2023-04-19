@@ -29,11 +29,9 @@ public class Add1Row2Tree_623 {
         }else{
             if(d==1){
                 if(dir){
-                    TreeNode t=p.right;
                     p.right=new TreeNode(v);
                     p.right.right=n;
                 }else{
-                    TreeNode t=p.left;
                     p.left=new TreeNode(v);
                     p.left.left=n;
                 }

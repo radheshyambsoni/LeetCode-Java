@@ -1,7 +1,5 @@
 package Arrays.Medium;
 
-import java.util.Arrays;
-
 // 498. Diagonal Traverse
 // https://leetcode.com/problems/diagonal-traverse/
 // Runtime 1 ms Beats 100%

@@ -1,5 +1,7 @@
 package Arrays.Medium;
 
+import java.util.Arrays;
+
 // 238. Product of Array Except Self
 // https://leetcode.com/problems/product-of-array-except-self/description/
 // Runtime 1 ms Beats 100%
