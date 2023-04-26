@@ -1,8 +1,4 @@
 ## Getting Started
-
-- Owner: Radheshyam Soni 
-- :email: - radheshyambsoni@gmail.com
-
 - This repo contains my LeetCode submissions in Java.
 
 ## Folder Structure
