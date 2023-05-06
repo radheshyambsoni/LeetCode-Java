@@ -8,10 +8,9 @@ package Arrays.Easy;
 
 public class CheckIfArrayIsSortedNRotated_1752 {
     public boolean check(int[] nums) {
-        int i=0,pivot=-1;
+        int i=0;
         while(i<nums.length-1){
             if(nums[i]>nums[i+1]){
-                pivot=i;
                 break;
             }
             i++;
