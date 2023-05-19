@@ -1,32 +1,36 @@
 package BackTracking.Medium;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
+// 39. Combination Sum
 // https://leetcode.com/problems/combination-sum/
-// Runtime 3 ms Beats 88.58%
-// Memory 44.9 MB Beats 46.88%
+// Runtime 2 ms Beats 80.1%
+// Memory 43.9 MB Beats 8.18%
+// May 19, 2023
 
 public class CombinationSum {
-    List<List<Integer>> ans=new ArrayList<>();
     public List<List<Integer>> combinationSum(int[] candidates,int target){
-        findCombinations(candidates,target,new ArrayList<>(),0);
+        List<List<Integer>> ans=new LinkedList<>();
+        helper(candidates, target, ans, new LinkedList<>(), 0);
         return ans;
     }
-    public void findCombinations(int[] candidates,int target,List<Integer> temp,int index){
-        if(target==0){            
-            List<Integer> a=new ArrayList<>(temp);
-            ans.add(a);                        
+    public void helper(int[] nums,int target,List<List<Integer>> ans,List<Integer> ds,int idx){
+        if(target==0){
+            List<Integer> l=new LinkedList<>(ds);
+            ans.add(l);
             return;
         }
-        for(int i=index;i<candidates.length;i++){
-            if(candidates[i]<=target){
-                temp.add(candidates[i]);
-                findCombinations(candidates, target-candidates[i], temp,i);
-                temp.remove(temp.size()-1);
-            }else{
-                continue;
-            }
+
+        if(idx==nums.length){
+            return;
         }
+
+        if(nums[idx]<=target){
+            ds.add(nums[idx]);
+            helper(nums, target-nums[idx], ans, ds, idx);
+            ds.remove(ds.size()-1);
+        }
+        helper(nums, target, ans, ds, idx+1);
     }
 }
