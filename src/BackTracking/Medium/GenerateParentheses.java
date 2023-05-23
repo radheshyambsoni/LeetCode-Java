@@ -3,10 +3,11 @@ package BackTracking.Medium;
 import java.util.ArrayList;
 import java.util.List;
 
+// 22. Generate Parentheses
 // https://leetcode.com/problems/generate-parentheses/
-// Runtime 1 ms Beats 97.95%
-// Memory 43.6 MB Beats 54.82%
-// December 01, 2022
+// Runtime 0 ms Beats 100%
+// Memory 42 MB Beats 99.16%
+// May 23, 2023
 
 public class GenerateParentheses {
     List<String> ans=new ArrayList<>();
