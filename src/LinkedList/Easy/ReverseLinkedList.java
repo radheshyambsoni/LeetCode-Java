@@ -1,26 +1,26 @@
 package LinkedList.Easy;
 
+// 206. Reverse Linked List
 // https://leetcode.com/problems/reverse-linked-list/
 // Runtime 0 ms Beats 100%
-// Memory 43.1 MB Beats 30.31%
-// Related Topics - Linked List, Recursion
-// December 01, 2022
+// Memory 41.3 MB Beats 93.88%
+// Jun 13, 2023
 
 public class ReverseLinkedList {
     public ListNode reverseList(ListNode head) {
         if(head==null || head.next==null){
             return head;
         }
-        return reverse(null,head,head.next);
-    }
-    public ListNode reverse(ListNode three,ListNode two,ListNode one){
-        if(one==null){
-            return two;
+        
+        ListNode prev=null, curr=head, next=head.next;
+        while(next!=null){
+            ListNode temp=next.next;
+            next.next=curr;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+            next=temp;
         }
-
-        ListNode temp=one.next;
-        one.next=two;
-        two.next=three;
-        return reverse(two,one,temp);
+        return curr;
     }
 }
