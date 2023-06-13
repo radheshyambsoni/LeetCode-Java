@@ -1,9 +1,9 @@
 package LinkedList.Medium;
 
 // https://leetcode.com/problems/reorder-list/
-// Runtime 2 ms Beats 84.72%
-// Memory 54.6 MB Beats 17.16%
-// December 04, 2022
+// Runtime 1 ms Beats 100%
+// Memory 46.1 MB Beats 26.67%
+// Jun 13, 2023 
 
 public class ReorderList {
     public void reorderList(ListNode head) {
@@ -29,7 +29,7 @@ public class ReorderList {
             head1.next=null;
         }
     }
-    private ListNode middleNode(ListNode head) {
+    ListNode middleNode(ListNode head) {
         ListNode slow=head,fast=head;
         while(fast!=null && fast.next!=null){
             slow=slow.next;
@@ -37,20 +37,20 @@ public class ReorderList {
         }
         return slow;
     }
-    private ListNode reverseList(ListNode head) {
+    ListNode reverseList(ListNode head) {
         if(head==null || head.next==null){
             return head;
         }
-        return reverse(null,head,head.next);
-    }
-    private ListNode reverse(ListNode three,ListNode two,ListNode one){
-        if(one==null){
-            return two;
+        
+        ListNode prev=null, curr=head, next=head.next;
+        while(next!=null){
+            ListNode temp=next.next;
+            next.next=curr;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+            next=temp;
         }
-
-        ListNode temp=one.next;
-        one.next=two;
-        two.next=three;
-        return reverse(two,one,temp);
+        return curr;
     }
 }
