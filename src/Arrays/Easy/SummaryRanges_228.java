@@ -1,5 +1,8 @@
 package Arrays.Easy;
 
+import java.util.LinkedList;
+import java.util.List;
+
 // 228. Summary Ranges
 // https://leetcode.com/problems/summary-ranges/description/
 // Runtime 5 ms Beats 83.94%
