@@ -11,7 +11,7 @@ import java.util.Stack;
 // June 24, 2023
 
 // Iterative solution
-public class BinaryTreeInorderTraversal {
+public class BinaryTreeInorderTraversal_94 {
     public List<Integer> inorderTraversal(TreeNode root) {
         if(root==null) return new ArrayList<>();
         List<Integer> inorder=new ArrayList<>();
