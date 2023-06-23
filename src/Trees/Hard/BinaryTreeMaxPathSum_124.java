@@ -7,9 +7,6 @@ package Trees.Hard;
 // June 23, 2023
 
 public class BinaryTreeMaxPathSum_124 {
-    
-}
-class Solution {
     int max=-10000;
     public int maxPathSum(TreeNode root) {
         helper(root);
