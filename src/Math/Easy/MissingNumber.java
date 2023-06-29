@@ -2,10 +2,13 @@ package Math.Easy;
 
 // 268. Missing Number
 // https://leetcode.com/problems/missing-number/
+// Runtime 0 ms Beats 100%
+// Memory 44 MB Beats 57.9%
+// June 29, 2023
 
 public class MissingNumber {
     public static int missingNumber(int[] nums) {
-        // Of course not the best solution by cyclic sort
+        // // Of course not the best solution by cyclic sort
         // // Cyclic sort as the given numbers are in range [0,n]
         // // here we need to ignore the last number i.e nums.length
         // int i=0;
@@ -26,14 +29,23 @@ public class MissingNumber {
         // }
         // return nums.length;
         
-        // clever one
-        // Runtime: 1 ms, faster than 81.42% of Java online submissions for Missing Number.
-        // Memory Usage: 51.3 MB, less than 32.88% of Java online submissions for Missing Number.
-        int expectedSum=(nums.length*(nums.length+1))/2;
-        int actualSum=0;
+        // // clever one
+        // // Runtime: 1 ms, faster than 81.42% of Java online submissions for Missing Number.
+        // // Memory Usage: 51.3 MB, less than 32.88% of Java online submissions for Missing Number.
+        // int expectedSum=(nums.length*(nums.length+1))/2;
+        // int actualSum=0;
+        // for(int i=0;i<nums.length;i++){
+        //     actualSum+=nums[i];
+        // }        
+        // return expectedSum-actualSum;
+
+        // best one - xor
+        // we know that a^a=0 - we just use this property and get the answer
+        int xor=0;
         for(int i=0;i<nums.length;i++){
-            actualSum+=nums[i];
-        }        
-        return expectedSum-actualSum;
+            xor^=i;
+            xor^=nums[i];
+        }
+        return xor^nums.length;
     }
 }
