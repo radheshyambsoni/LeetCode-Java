@@ -1,12 +1,12 @@
 package Trees.Easy;
 
+// 111. Minimum Depth of Binary Tree
 // https://leetcode.com/problems/minimum-depth-of-binary-tree/
-// Runtime 7 ms Beats 79.14%
-// Memory 95.7 MB Beats 7.53%
-// January 21, 2023
+// Runtime 2 ms Beats 81.71%
+// Memory 62.2 MB Beats 69.67%
+// Jul 10, 2023
 
-
-public class MinDepthOfBinaryTree {
+public class MinDepthOfBinaryTree_111 {
     int minD=100000;
     public int minDepth(TreeNode root){
         if(root==null){return 0;}
