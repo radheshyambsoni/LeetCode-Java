@@ -1,11 +1,3 @@
-## Getting Started
-- This repo contains my LeetCode submissions in Java.
+## This repo contains my LeetCode submissions in Java.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Compiled output files generated in the `bin` folder by default.
+You can find the code files in the `src` in the respective topic folders
