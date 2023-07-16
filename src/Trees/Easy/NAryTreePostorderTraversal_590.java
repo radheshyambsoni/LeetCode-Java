@@ -9,22 +9,6 @@ import java.util.List;
 // Memory 44.65mb Beats 31.61%
 // Jul 14, 2023
 
-class Node {
-    public int val;
-    public List<Node> children;
-
-    public Node() {}
-
-    public Node(int _val) {
-        val = _val;
-    }
-
-    public Node(int _val, List<Node> _children) {
-        val = _val;
-        children = _children;
-    }
-};
-
 public class NAryTreePostorderTraversal_590 {
     public List<Integer> postorder(Node root) {
         List<Integer> post=new ArrayList<>();

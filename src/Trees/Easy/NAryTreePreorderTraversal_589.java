@@ -6,24 +6,6 @@ import java.util.Stack;
 
 // 589. N-ary Tree Preorder Traversal
 // https://leetcode.com/problems/n-ary-tree-preorder-traversal/description/
-
-// Definition for a Node.
-class Node {
-    public int val;
-    public List<Node> children;
-
-    public Node() {}
-
-    public Node(int _val) {
-        val = _val;
-    }
-    
-    public Node(int _val, List<Node> _children) {
-        val = _val;
-        children = _children;
-    }
-};
-
 // Runtime 3 ms Beats 29.70%
 // Memory 44.6 MB Beats 14.31%
 // June 24, 2023
