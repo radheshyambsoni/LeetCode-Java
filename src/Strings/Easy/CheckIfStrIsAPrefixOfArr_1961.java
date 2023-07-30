@@ -4,6 +4,7 @@ package Strings.Easy;
 // https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/
 // Runtime 0 ms  Beats 100%
 // Memory 41.3 MB Beats 85.71%
+// Jul 30, 2023
 
 public class CheckIfStrIsAPrefixOfArr_1961 {
     public boolean isPrefixString(String s, String[] words) {
