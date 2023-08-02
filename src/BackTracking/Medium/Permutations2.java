@@ -1,64 +1,45 @@
 package BackTracking.Medium;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+// 47. Permutations II
 // https://leetcode.com/problems/permutations-ii/
-// Runtime 38 ms Beats 25.25%
-// Memory 43.1 MB Beats 88.72%
-// December 14, 2022
+// Runtime 8 ms Beats 36.86%
+// Memory 45.1 MB Beats 6.17%
 
 public class Permutations2 {
-    // Set<List<Integer>> set=new HashSet<>();
-    // public List<List<Integer>> permuteUnique(int[] nums) {
-    //     Arrays.sort(nums);
-    //     addPermutations(nums,0);
-    //     return new ArrayList<>(set);
-    // }
-    // private void addPermutations(int[] arr,int index) {
-    //     if(index==arr.length){
-    //         List<Integer> ds=new ArrayList<>();
-    //         for(int i:arr){
-    //             ds.add(i);
-    //         }
-    //         set.add(ds);
-    //     }
-    //     for(int i=index;i<arr.length;i++){
-    //         swap(arr,index,i);
-    //         addPermutations(arr, index+1);
-    //         swap(arr,index,i);
-    //     }
-    // }
-    // private void swap(int[] arr, int index, int i) {
-    //     int temp=arr[index];
-    //     arr[index]=arr[i];
-    //     arr[i]=temp;
-    // }
-    
-    List<List<Integer>> ans;
-    Set<List<Integer>> set=new HashSet<>();
     public List<List<Integer>> permuteUnique(int[] nums) {
-        addPermutations(nums, new boolean[nums.length], new ArrayList<>());
-        ans=new ArrayList<>(set);
-        return ans;
+        Arrays.sort(nums);
+        Set<List<Integer>> ans = new HashSet<>();
+        addPermutations(nums, 0, new ArrayList<>(), ans);
+        return new ArrayList<>(ans);
     }
-    public void addPermutations(int[] nums,boolean[] track,List<Integer> l){
-        if(l.size()==nums.length){
-            List<Integer> a=new ArrayList<>(l);
-            set.add(a);
+
+    void addPermutations(int[] nums, int idx, List<Integer> l, Set<List<Integer>> ans) {
+        if (idx == nums.length) {
+            ans.add(new ArrayList<>(l));
             return;
         }
-
-        for(int i=0;i<nums.length;i++){
-            if(!track[i]){
-                track[i]=true;
-                l.add(nums[i]);
-                addPermutations(nums, track, l);
-                l.remove(l.size()-1);
-                track[i]=false;
-            }
+        for (int i = idx; i < nums.length; i++) {
+            if (i != idx && nums[idx] == nums[i])
+                continue;
+            swap(nums, idx, i);
+            l.add(nums[idx]);
+            addPermutations(nums, idx + 1, l, ans);
+            l.remove(l.size() - 1);
+            swap(nums, idx, i);
         }
+    }
+
+    void swap(int[] nums, int i, int j) {
+        if (i == j)
+            return;
+        nums[i] ^= nums[j];
+        nums[j] ^= nums[i];
+        nums[i] ^= nums[j];
     }
 }
