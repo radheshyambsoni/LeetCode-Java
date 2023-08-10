@@ -2,25 +2,11 @@ package BinarySearch.Medium;
 
 // 81. Search in Rotated Sorted Array II
 // https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+// Runtime 0 ms Beats 100%
+// Memory 42.7 MB Beats 91.85%
+// Aug 10, 2023
 
-public class SearchInRotatedSortedArrayII_81 {
-    // Linear search has better runtime in this case
-    // Runtime: 0 ms, faster than 100.00% of Java online submissions for Search in
-    // Rotated Sorted Array II.
-    // Memory Usage: 42.3 MB, less than 87.85% of Java online submissions for Search
-    // in Rotated Sorted Array II.
-    // public boolean search(int[] nums, int target) {
-    // for(int i:nums){
-    // if(i==target){return true;}
-    // }
-    // return false;
-    // }
-
-    // the below one is binary search one, but has comparatively bad runtime
-    // Runtime: 1 ms, faster than 86.87% of Java online submissions for Search in
-    // Rotated Sorted Array II.
-    // Memory Usage: 42.2 MB, less than 87.85% of Java online submissions for Search
-    // in Rotated Sorted Array II.
+public class SearchInRotatedSortedArray2_81 {
     public boolean binarySearch(int nums[], int target, int start, int end) {
         while (start <= end) {
             int mid = start + (end - start) / 2;
