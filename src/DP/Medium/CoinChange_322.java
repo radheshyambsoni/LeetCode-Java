@@ -2,31 +2,31 @@ package DP.Medium;
 
 // 322. Coin Change
 // https://leetcode.com/problems/coin-change/
-// Runtime 20 ms Beats 57.3%
-// Memory 43.8 MB Beats 28.43%
-// Jul 04, 2023
+// Runtime 13 ms Beats 92.46%
+// Memory 43.4 MB Beats 60.92%
+// Aug 12, 2023
 
 public class CoinChange_322 {
     public int coinChange(int[] coins, int amount) {
-        int[] dp=new int[amount+1];
-
-        for(int amt=1;amt<=amount;amt++){
-            if(amt%coins[0]==0) dp[amt]=amt/coins[0];
-            else dp[amt]=(int)1e9;
+        int n = coins.length;
+        int[] prev = new int[amount + 1];
+        for (int tar = 0; tar <= amount; tar++) {
+            prev[tar] = (tar % coins[0] == 0) ? (tar / coins[0]) : (int) 1e9;
         }
 
-        for(int idx=1;idx<coins.length;idx++){
-            int[] temp=new int[amount+1];
-            for(int amt=0;amt<=amount;amt++){
-                int notTake=dp[amt];
-                int take=Integer.MAX_VALUE;
-                if(coins[idx]<=amt){
-                    take=1+temp[amt-coins[idx]];
-                }
-                temp[amt]=Math.min(take,notTake);
+        for (int idx = 1; idx < n; idx++) {
+            int[] cur = new int[amount + 1];
+            for (int tar = 0; tar <= amount; tar++) {
+                int notTake = prev[tar];
+                int take = coins[idx] <= tar ? (1 + cur[tar - coins[idx]]) : (int) 1e9;
+                cur[tar] = Math.min(notTake, take);
             }
-            dp=temp;
+            prev = cur;
         }
-        return dp[amount]>=1e9?-1:dp[amount];
+
+        int ans = prev[amount];
+        if (ans >= (int) 1e9)
+            return -1;
+        return ans;
     }
 }
