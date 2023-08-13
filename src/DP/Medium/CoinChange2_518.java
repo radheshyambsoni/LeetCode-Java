@@ -35,6 +35,31 @@ public class CoinChange2_518 {
     }
 }
 
+// 1D array space optimization
+// Runtime 5 ms Beats 62.25%
+// Memory 40.5 MB Beats 65.59%
+// public class CoinChange2_518 {
+// public int change(int amount, int[] coins) {
+// int n = coins.length;
+// int[] cur = new int[amount+1];
+
+// cur[0] = 1;
+// for(int tar=1;tar<=amount;tar++) {
+// if(tar%coins[0] == 0) cur[tar] = 1;
+// }
+
+// for(int idx=1;idx<n;idx++){
+// for(int tar=1;tar<=amount;tar++){
+// int notTake = cur[tar];
+// int take = (coins[idx] <= tar) ? cur[tar - coins[idx]] : 0;
+// cur[tar] = take + notTake;
+// }
+// }
+
+// return cur[amount];
+// }
+// }
+
 // Space optimization
 // Runtime 6 ms Beats 57.98%
 // Memory 43.4 MB Beats 61.27%
