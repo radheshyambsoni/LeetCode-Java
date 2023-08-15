@@ -2,4 +2,4 @@
 
 You can find the code files in the `src` in the respective topic folders
 
-- [LeetCode Profile](https://leetcode.com/radheshyambsoni)
+- <a href="https://leetcode.com/radheshyambsoni/" target="_blank" rel=noopener>My LeetCode Profile</a>
