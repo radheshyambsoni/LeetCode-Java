@@ -9,7 +9,7 @@ import java.util.List;
 // Memory 42.3 MB Beats 86.47%
 // February 05, 2023
 
-public class BinaryTreePaths {    
+public class BinaryTreePaths_257 {    
     List<String> ans=new ArrayList<>();    
     public List<String> binaryTreePaths(TreeNode root) {        
         helper(root,"");
