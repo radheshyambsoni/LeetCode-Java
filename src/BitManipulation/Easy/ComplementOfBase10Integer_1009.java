@@ -7,7 +7,7 @@ package BitManipulation.Easy;
 // Memory 39.5 MB Beats 35.32%
 // January 24, 2023
 
-public class ComplementOfBase10Integer {
+public class ComplementOfBase10Integer_1009 {
     public int bitwiseComplement(int n) {
         char[] num=Integer.toBinaryString(n).toCharArray();
         int ans=0,pow=1;
