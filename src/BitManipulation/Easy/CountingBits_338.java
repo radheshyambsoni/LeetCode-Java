@@ -2,11 +2,11 @@ package BitManipulation.Easy;
 
 // 338. Counting Bits
 // https://leetcode.com/problems/counting-bits/
-// Runtime 1 ms Beats 99.63%
-// Memory 46.4 MB Beats 51.44%
+// Runtime 0 ms Beats 100%
+// Memory 38.9 MB Beats 94.44%
 // Sep 01, 2023
 
-public class CountingBits {
+public class CountingBits_338 {
     public int[] countBits(int n) {
         int[] ans = new int[n + 1];
         ans[0] = 0;
