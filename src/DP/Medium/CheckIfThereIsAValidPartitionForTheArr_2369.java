@@ -4,6 +4,7 @@ package DP.Medium;
 // https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/
 // Runtime 7 ms Beats 86.73%
 // Memory 62.2 MB Beats 26.10%
+// Sep 16, 2023
 
 public class CheckIfThereIsAValidPartitionForTheArr_2369 {
     boolean f(int[] nums, int idx, Boolean[] dp) {
