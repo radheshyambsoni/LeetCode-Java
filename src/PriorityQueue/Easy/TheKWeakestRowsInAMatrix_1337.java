@@ -1,4 +1,4 @@
-package Arrays.Easy;
+package PriorityQueue.Easy;
 
 import java.util.PriorityQueue;
 
