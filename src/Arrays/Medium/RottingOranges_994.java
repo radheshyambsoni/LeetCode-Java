@@ -11,20 +11,6 @@ import java.util.Queue;
 // Sep 24, 2023
 
 public class RottingOranges_994 {
-
-}
-
-class Solution {
-    // boolean isUntouchable(int[][] grid, int i, int j) {
-    // int m = grid.length, n = grid[0].length;
-    // int up = i > 0 ? grid[i - 1][j] : -1;
-    // int down = i < m - 1? grid[i + 1][j] : -1;
-    // int left = j > 0 ? grid[i][j - 1] : -1;
-    // int right = j < n - 1 ? grid[i][j + 1] : -1;
-
-    // return (up == -1 || up == 0) & (down == -1 || down == 0) & (left == -1 ||
-    // left == 0) & (right == -1 || right == 0);
-    // }
     public int orangesRotting(int[][] grid) {
         int m = grid.length, n = grid[0].length;
         ArrayList<int[]> rotten = new ArrayList<>();
