@@ -4,29 +4,53 @@ package DP.Medium;
 
 // 1143. Longest Common Subsequence
 // https://leetcode.com/problems/longest-common-subsequence/
-// Runtime 22 ms Beats 55.73%
-// Memory 48.3 MB Beats 56.74%
+// Runtime 19 ms Beats 91.21%
+// Memory 44 MB Beats 93.62%
 // Sep 27, 2023
 
-// tabulation
+// space optimization
 public class LongestCommonSubsequence_1143 {
     public int longestCommonSubsequence(String text1, String text2) {
         int m = text1.length(), n = text2.length();
 
-        int[][] dp = new int[m + 1][n + 1];
+        int[] prev = new int[n + 1];
+        int[] curr = new int[n + 1];
 
         for (int i = 1; i <= m; i++) {
             for (int j = 1; j <= n; j++) {
                 if (text1.charAt(i - 1) == text2.charAt(j - 1))
-                    dp[i][j] = 1 + dp[i - 1][j - 1];
+                    curr[j] = 1 + prev[j - 1];
                 else
-                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                    curr[j] = Math.max(prev[j], curr[j - 1]);
             }
+            prev = (int[]) (curr.clone());
         }
 
-        return dp[m][n];
+        return prev[n];
     }
 }
+
+// Runtime 22 ms Beats 55.73%
+// Memory 48.3 MB Beats 56.74%
+// tabulation
+// public class LongestCommonSubsequence_1143 {
+// public int longestCommonSubsequence(String text1, String text2) {
+// int m = text1.length(), n = text2.length();
+
+// int[][] dp = new int[m + 1][n + 1];
+
+// for (int i = 1; i <= m; i++) {
+// for (int j = 1; j <= n; j++) {
+// if (text1.charAt(i - 1) == text2.charAt(j - 1))
+// dp[i][j] = 1 + dp[i - 1][j - 1];
+// else
+// dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+// }
+// }
+
+// return dp[m][n];
+// }
+// }
 
 // Runtime 23 ms Beats 46.49%
 // Memory 48.5 MB Beats 31.46%
