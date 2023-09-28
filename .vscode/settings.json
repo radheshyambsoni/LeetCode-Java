@@ -7,5 +7,4 @@
         "lib/**/*.jar"
     ],
     "debug.terminal.clearBeforeReusing": true,
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
 }
