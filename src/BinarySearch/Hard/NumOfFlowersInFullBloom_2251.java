@@ -6,6 +6,7 @@ import java.util.Arrays;
 // https://leetcode.com/problems/number-of-flowers-in-full-bloom/
 // Runtime 37 ms Beats 95%
 // Memory 72.8 MB Beats 44.23%
+// Oct 11, 2023
 
 public class NumOfFlowersInFullBloom_2251 {
     int binarySearch(int[] arr, int target) {
