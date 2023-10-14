@@ -6,7 +6,7 @@ package DP.Easy;
 // Memory 38.9 MB Beats 86.73%
 // February 11, 2023
 
-public class GetMaxInGeneratedArr {
+public class GetMaxInGeneratedArr_1646 {
     public int getMaximumGenerated(int n) {
         if(n==0 || n==1){
             return n;
