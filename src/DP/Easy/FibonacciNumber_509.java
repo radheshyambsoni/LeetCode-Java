@@ -5,7 +5,7 @@ package DP.Easy;
 // Runtime 0 ms Beats 100%
 // Memory 40.3 MB Beats 33.49%
 
-public class FibonacciNumber {
+public class FibonacciNumber_509 {
     public int fib(int n) {
         if(n==1 || n==0){
             return n;
