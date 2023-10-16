@@ -1,14 +1,16 @@
-package Arrays.Easy;
+package DP.Easy;
 
 import java.util.ArrayList;
 import java.util.List;
 
 // 119. Pascal's Triangle II
 // https://leetcode.com/problems/pascals-triangle-ii/
-// Related Topics - Arrays, DP
+// Runtime 0 ms Beats 100% 
+// Memory 39.9 MB Beats 78.48%
+// Oct 16, 2023
 
 public class PascalTriangle2_119 {
-    public static List<Integer> getRow(int rowIndex) {
+    public List<Integer> getRow(int rowIndex) {
         List<Integer> ans = new ArrayList<>();
         long prev = 1;
         ans.add(1);
@@ -19,9 +21,5 @@ public class PascalTriangle2_119 {
         }
 
         return ans;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(getRow(13));
     }
 }
