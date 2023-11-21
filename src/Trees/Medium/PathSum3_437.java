@@ -5,6 +5,8 @@ import java.util.HashMap;
 // 437. Path Sum III
 // https://leetcode.com/problems/path-sum-iii/
 // Runtime 2 ms Beats 100.00%
+// Memory 43.35 MB Beats 29.66%
+// Nov 21, 2023
 
 public class PathSum3_437 {
     public int pathSum(TreeNode root, int targetSum) {
