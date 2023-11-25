@@ -1,11 +1,9 @@
 package Arrays.Medium;
 
-import java.util.HashSet;
-
 // 2442. Count Number of Distinct Integers After Reverse Operations
 // https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/
-// Runtime 55 ms Beats 70.59%
-// Memory 65.98 MB Beats 25.53%
+// Runtime 13 ms Beats 99.73%
+// Memory 55.64 MB Beats 97.99%
 // Nov 25, 2023
 
 public class CountNumOfDistinctIntegersAfterReverseOperations_2442 {
@@ -20,12 +18,21 @@ public class CountNumOfDistinctIntegersAfterReverseOperations_2442 {
     }
 
     public int countDistinctIntegers(int[] nums) {
-        HashSet<Integer> set = new HashSet<>();
+        boolean[] set = new boolean[(int) 1e6 + 1];
+        int cnt = 0;
         for (int num : nums) {
-            set.add(num);
-            set.add(reverse(num));
+            if (!set[num]) {
+                set[num] = true;
+                cnt++;
+            }
+
+            int rev = reverse(num);
+            if (!set[rev]) {
+                set[rev] = true;
+                cnt++;
+            }
         }
 
-        return set.size();
+        return cnt;
     }
 }
