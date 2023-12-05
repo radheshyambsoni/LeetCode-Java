@@ -1,6 +1,7 @@
 package Math.Easy;
 
 // https://leetcode.com/problems/count-of-matches-in-tournament/
+// 1688. Count of Matches in Tournament
 // Runtime 0 ms Beats 100%
 // Memory 39.74 MB Beats 11.90%
 // Dec 05, 2023
