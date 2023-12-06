@@ -1,10 +1,14 @@
 {
-    "java.project.sourcePaths": [
-        "src"
-    ],
-    "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar"
-    ],
-    "debug.terminal.clearBeforeReusing": true,
+	"java.project.sourcePaths": ["src"],
+	"java.project.outputPath": "bin",
+	"java.project.referencedLibraries": ["lib/**/*.jar"],
+	"debug.terminal.clearBeforeReusing": true,
+	"java.configuration.runtimes": [
+		{
+			"name": "JavaSE-21",
+			"path": "/usr/java/jdk-21",
+			"default": true
+		}
+	],
+	"java.jdt.ls.java.home": "/usr/java/jdk-21"
 }
