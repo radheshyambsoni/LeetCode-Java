@@ -3,6 +3,7 @@
 	"java.project.outputPath": "bin",
 	"java.project.referencedLibraries": ["lib/**/*.jar"],
 	"debug.terminal.clearBeforeReusing": true,
+	// next lines apply for linux only
 	"java.jdt.ls.java.home": "/usr/java/jdk-21",
 	"java.configuration.runtimes": [
 		{
