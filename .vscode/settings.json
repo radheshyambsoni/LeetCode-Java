@@ -4,12 +4,12 @@
 	"java.project.referencedLibraries": ["lib/**/*.jar"],
 	"debug.terminal.clearBeforeReusing": true,
 	// next lines apply for linux only
-	"java.jdt.ls.java.home": "/usr/java/jdk-21",
-	"java.configuration.runtimes": [
-		{
-			"name": "JavaSE-21",
-			"path": "/usr/java/jdk-21",
-			"default": true
-		}
-	]
+	// "java.jdt.ls.java.home": "/usr/java/jdk-21",
+	// "java.configuration.runtimes": [
+	// 	{
+	// 		"name": "JavaSE-21",
+	// 		"path": "/usr/java/jdk-21",
+	// 		"default": true
+	// 	}
+	// ]
 }
