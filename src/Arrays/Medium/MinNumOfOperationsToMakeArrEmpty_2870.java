@@ -6,7 +6,7 @@ import java.util.HashMap;
 // https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/
 // Runtime 19 ms Beats 73.58%
 // Memory 63.38 MB Beats 6.04%
-// Dec 04, 2023
+// Jan 04, 2024
 
 public class MinNumOfOperationsToMakeArrEmpty_2870 {
     public int minOperations(int[] nums) {
