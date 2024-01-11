@@ -1,27 +1,28 @@
 package Trees.Medium;
 
-// https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/ - Medium
-// Runtime 1 ms Beats 80.2%
-// Memory 42.2 MB Beats 76.13%
-// December 09, 2022 - Daily Challenge
+// 1026. Maximum Difference Between Node and Ancestor
+// https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/
+// Runtime 0 ms Beats 100.00%
+// Memory 41.97 MB Beats 21.32%
+// Jan 11, 2024
 
 public class MaxDiffBWNodeNAncestor {
-    int ans;
     public int maxAncestorDiff(TreeNode root) {
-        ans=0;
-        helper(root,root.val,root.val);
-        return ans;
+        int[] ans = new int[1];
+        f(root, root.val, root.val, ans);
+        return ans[0];
     }
-    private void helper(TreeNode node,int max,int min){
-        int newMax=Math.max(max,node.val);
-        int newMin=Math.min(min,node.val);
-        ans=Math.max(ans,newMax-newMin);
 
-        if(node.left!=null){
-            helper(node.left, newMax, newMin);
+    void f(TreeNode node, int max, int min, int[] ans) {
+        int newMax = Math.max(max, node.val);
+        int newMin = Math.min(min, node.val);
+        ans[0] = Math.max(ans[0], newMax - newMin);
+
+        if (node.left != null) {
+            f(node.left, newMax, newMin, ans);
         }
-        if(node.right!=null){
-            helper(node.right, newMax, newMin);
+        if (node.right != null) {
+            f(node.right, newMax, newMin, ans);
         }
-    }   
+    }
 }
