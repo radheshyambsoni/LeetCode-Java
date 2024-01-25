@@ -4,9 +4,9 @@ package DP.Medium;
 
 // 1143. Longest Common Subsequence
 // https://leetcode.com/problems/longest-common-subsequence/
-// Runtime 19 ms Beats 91.21%
-// Memory 44 MB Beats 93.62%
-// Sep 27, 2023
+// Runtime 18 ms Beats 93.57%
+// Memory 45.10 MB Beats 93.54%
+// Jan 26, 2024
 
 // space optimization
 public class LongestCommonSubsequence_1143 {
