@@ -6,16 +6,16 @@ package DP.Medium;
 // Memory 42.9 MB Beats 31.26%
 // February 12, 2023
 
-public class JumpGame2 {
+public class JumpGame2_45 {
     public int jump(int[] nums) {
-        int end=0,farthest=0;
-        int jump=0;
+        int end = 0, farthest = 0;
+        int jump = 0;
 
-        for(int i=0;i<nums.length-1;i++){
-            farthest=Math.max(farthest,i+nums[i]);
-            if(i==end){
+        for (int i = 0; i < nums.length - 1; i++) {
+            farthest = Math.max(farthest, i + nums[i]);
+            if (i == end) {
                 jump++;
-                end=farthest;
+                end = farthest;
             }
         }
         return jump;
